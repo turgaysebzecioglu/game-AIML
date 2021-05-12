@@ -1,3 +1,3 @@
 # game-AIML
-A paintball game written in the AIML/
-The language of this game is Turkish
+Games written in the AIML/
+The natural language of these games is Turkish
