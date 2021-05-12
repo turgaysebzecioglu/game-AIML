@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 05-12-2021 -->
+<!-- File: find_age_game.aiml -->
+<!-- Game Description: Chatbot estimates your age using your shoe number.  -->
+<aiml version="1.0">
+  <topic name="YAŞ BULMA OYUNU1">
+    <category>
+      <pattern>*</pattern>
+      <that>AYAKKABI NUMARANIZ</that>
+      <template>Doğum tarihiniz?</template>
+    </category>
+    <category>
+      <pattern>1930</pattern>
+      <that>DOĞUM TARIHINIZ</that>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 90, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1931</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 89, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1932</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 88, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1933</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 87, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1934</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 86, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1935</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 85, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1936</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 84, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1937</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 83, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1938</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 82, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1939</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 81, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1940</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 80, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1941</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 79, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1942</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 78, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1943</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 77, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1944</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 76, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1945</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 75, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1946</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 74, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1947</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 73, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1948</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 72, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1949</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 71, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1950</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 70, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1951</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 69, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1952</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 68, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1953</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 67, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1954</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 66, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1955</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 65, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1956</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 64, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1957</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 63, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1958</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 62, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1959</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 61, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1960</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 60, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1961</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 59, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1962</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 58, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1963</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 57, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1964</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 56, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1965</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 55, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1966</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 54, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1967</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 53, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1968</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 52, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1969</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 51, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1970</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 50, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1971</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 49, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1972</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 48, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1973</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 47, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1974</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 46, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1975</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 45, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1976</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 44, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1977</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 43, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1978</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 42, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1979</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 41, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1980</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 40, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1981</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 39, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1982</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 38, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1983</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 37, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1984</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 36, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1985</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 35, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1986</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 34, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1987</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 33, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1988</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 32, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1989</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 31, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1990</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 30, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1991</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 29, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1992</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 28, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1993</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 27, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1994</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 26, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1995</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 25, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1996</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 24, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1997</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 23, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1998</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 22, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>1999</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 21, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2000</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 20, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2001</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 19, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2002</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 18, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2003</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 17, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2004</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 16, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2005</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 15, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2006</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 14, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2007</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 13, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2008</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 12, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2009</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 11, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2010</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 10, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2011</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 9, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2012</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 8, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2013</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 7, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2014</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 6, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2015</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 5, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2016</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 4, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2017</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 3, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2018</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 2, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2019</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 1, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2020</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2021</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2022</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2023</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2024</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2025</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2026</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2027</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2028</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2029</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>2030</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonuç: Yaşınız 0, ayakkabı numaranız <input index="2"/>.</template>
+    </category>
+    <category>
+      <pattern>HESAPLAMA BIÇIMI NE</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonucun ilk iki rakamı ayakkabı numarasını son iki rakamı da yaşı vermektedir.</template>
+    </category>
+    <category>
+      <pattern>NASIL HESAPLADIN</pattern>
+      <template>(Ayakkabı numarası*5+50*20+1020-doğum tarihi) işleminden sonra çıkan sonucun ilk iki rakamı ayakkabı numarasını son iki rakamı da yaşı vermektedir.</template>
+    </category>
+  </topic>
+  <category>
+    <pattern>AYAKTAN YAŞ BUL OYUNU</pattern>
+    <template>Ayakkabı numarandan yaşını bulacağım. Bu teste katılmak istiyorsan AYAKTAN YAŞ BUL yaz.</template>
+  </category>
+  <category>
+    <pattern>AYAKTAN YAŞ BUL</pattern>
+    <template>Ayakkabı numaranız?<think><set name="it"><set name="topic">YAŞ BULMA OYUNU1</set></set></think></template>
+  </category>
+  <category>
+    <pattern>YAŞ BUL OYUNU 1</pattern>
+    <template>
+      <srai>AYAKTAN YAŞ BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>FIND AGE GAME</pattern>
+    <template>
+      <srai>AYAKTAN YAŞ BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>FIND AGE FROM SHOE SIZE GAME</pattern>
+    <template>
+      <srai>AYAKTAN YAŞ BUL OYUNU</srai>
+    </template>
+  </category>
+</aiml>
