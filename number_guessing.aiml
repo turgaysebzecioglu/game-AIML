@@ -2,6 +2,8 @@
 <!-- Game Developer: Turgay SEBZECİOĞLU -->
 <!-- Database Language: Turkish -->
 <!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Complies with the AIML 1.0 Standard -->
+<!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
 <!-- File: number_guessing.aiml -->
 <!-- Game Description: Chatbot guesses the number you keep in mind. -->
