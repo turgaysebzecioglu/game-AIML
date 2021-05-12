@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 04-25-2021 -->
+<!-- file: paintball_game.aiml -->
+<aiml version="1.0">
+  <category>
+    <pattern>SENARYO40</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 7 ( 1 isabetli + 4 isabetsiz atış), Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 8 (1 isabetli + 3 isabetsiz atış), Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO40A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO41</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 8 ( 1 isabetli + 3 isabetsiz atış), Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 7 (1 isabetli + 4 isabetsiz atış), Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO41A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO38</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 9 (2 isabetli + 1 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 2 mermi yedim. Kalan mermim: 8 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO38A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO39</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 8 (2 isabetli + 2 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 2 mermi yedim. Kalan mermim: 9 (2 isabetli + 1 isabetsiz atış), Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO39A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO36</pattern>
+    <template>SEN: 4 mermi yedin. Kalan mermin: 5 (3 isabetli + 4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 3 mermi yedim. Kalan mermim: 5 (4 isabetli + 3 isabetsiz atış, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO36A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO37</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 5 (4 isabetli + 3 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 4 mermi yedim. Kalan mermim: 5 (3 isabetli + 4 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO37A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO33</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 9 ( 2 isabetli + 1 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 4 mermi yedim. Kalan mermim: 8 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO33A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO32</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 9 ( 2 isabetli + 1 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 4 mermi yedim. Kalan mermim: 8 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO32</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 9 ( 2 isabetli + 1 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 4 mermi yedim. Kalan mermim: 8 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO31</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 4 ( 3 isabetli + 5 isabetsiz atış), Kalan Canın: 4.<br/>BEN: 3 mermi yedim. Kalan mermim: 8 (1 isabetli + 3 isabetsiz atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO31A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO30</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 8 (1 isabetli + 3 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 4 ( 3 isabetli + 5 isabetsiz atış), Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO30A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO29</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 8 (3 isabetli +  1 isabetsiz atış, Kalan Canın: 3.<br/>BEN: 3 mermi yedim. Kalan mermim: 7 (2 isabetli +  3 isabetsiz atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO29A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO28</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 7 (2 isabetli +  3 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 2 mermi yedim. Kalan mermim: 8 (3 isabetli +  1 isabetsiz atış, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO28A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO27</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO27A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO26</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO26A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO18</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 9, Kalan Canın: 2.<br/>BEN: 3 mermi yedim. Kalan mermim: 9, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO18A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO19</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 9, Kalan Canın: 2.<br/>BEN: 3 mermi yedim. Kalan mermim: 9, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO19A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO16</pattern>
+    <template>SEN: 3 mermi yedin. Kalan mermin: 11, Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 9, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO16A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO17</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 9, Kalan Canın: 4.<br/>BEN: 3 mermi yedim. Kalan mermim: 11, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO17A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO15</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO15A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO14</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO14A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO13</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO13A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO12</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO12A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO11</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO11A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO10</pattern>
+    <template>SEN: 0 mermi yedin. Kalan mermin: 11, Kalan Canın: 5.<br/>BEN: 0 mermi yedim. Kalan mermim: 11, Kalan Canım: 5. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO10A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO9</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO9A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO7</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 8, Kalan Canın: 4.<br/>BEN: 4 mermi yedim. Kalan mermim: 11, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO7A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO8</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO8A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>PAINT BALL OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>SENARYO6</pattern>
+    <template>SEN: 4 mermi yedin. Kalan mermin: 11, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 8, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO6A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO5</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 4.<br/>BEN: 2 mermi yedim. Kalan mermim: 11, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO5A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO4</pattern>
+    <template>SEN: 2 mermi yedin. Kalan mermin: 11, Kalan Canın: 3.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO4A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>OYUN18</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>KURŞUN SIKMA OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SALLAMA *</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>KURŞUN SALLAMA</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>SENARYO1</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO1A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO2</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO2A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>SENARYO3</pattern>
+    <template>SEN: 1 mermi yedin. Kalan mermin: 11, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 11, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO3A</set></set></think></template>
+  </category>
+  <category>
+    <pattern>MERMI SALLAMA OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SIKMA OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>OYUN 18</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ATEŞ</pattern>
+    <that>BIRBIRIMIZE BOYA TABANCASIYLA AYNI ANDA ATEŞ EDECEĞIZ İKIMIZIN DE CANI 5 MERMI SAYIMIZ 12OYUN BIRIMIZ ÖLENE KADAR DEVAM EDECEK HADI ATEŞ YAZ ÇATIŞALIM</that>
+    <template>
+      <random>
+        <li>
+          <srai>SENARYO1</srai>
+        </li>
+        <li>
+          <srai>SENARYO2</srai>
+        </li>
+        <li>
+          <srai>SENARYO3</srai>
+        </li>
+        <li>
+          <srai>SENARYO4</srai>
+        </li>
+        <li>
+          <srai>SENARYO5</srai>
+        </li>
+        <li>
+          <srai>SENARYO6</srai>
+        </li>
+        <li>
+          <srai>SENARYO7</srai>
+        </li>
+        <li>
+          <srai>SENARYO8</srai>
+        </li>
+        <li>
+          <srai>SENARYO9</srai>
+        </li>
+        <li>
+          <srai>SENARYO10</srai>
+        </li>
+        <li>
+          <srai>SENARYO11</srai>
+        </li>
+        <li>
+          <srai>SENARYO12</srai>
+        </li>
+        <li>
+          <srai>SENARYO13</srai>
+        </li>
+        <li>
+          <srai>SENARYO14</srai>
+        </li>
+        <li>
+          <srai>SENARYO15</srai>
+        </li>
+        <li>
+          <srai>SENARYO16</srai>
+        </li>
+        <li>
+          <srai>SENARYO17</srai>
+        </li>
+        <li>
+          <srai>SENARYO18</srai>
+        </li>
+        <li>
+          <srai>SENARYO19</srai>
+        </li>
+        <li>
+          <srai>SENARYO20</srai>
+        </li>
+        <li>
+          <srai>SENARYO21</srai>
+        </li>
+        <li>
+          <srai>SENARYO22</srai>
+        </li>
+        <li>
+          <srai>SENARYO23</srai>
+        </li>
+        <li>
+          <srai>SENARYO24</srai>
+        </li>
+        <li>
+          <srai>SENARYO25</srai>
+        </li>
+        <li>
+          <srai>SENARYO26</srai>
+        </li>
+        <li>
+          <srai>SENARYO27</srai>
+        </li>
+        <li>
+          <srai>SENARYO28</srai>
+        </li>
+        <li>
+          <srai>SENARYO29</srai>
+        </li>
+        <li>
+          <srai>SENARYO30</srai>
+        </li>
+        <li>
+          <srai>SENARYO31</srai>
+        </li>
+        <li>
+          <srai>SENARYO32</srai>
+        </li>
+        <li>
+          <srai>SENARYO33</srai>
+        </li>
+        <li>
+          <srai>SENARYO34</srai>
+        </li>
+        <li>
+          <srai>SENARYO35</srai>
+        </li>
+        <li>
+          <srai>SENARYO36</srai>
+        </li>
+        <li>
+          <srai>SENARYO37</srai>
+        </li>
+        <li>
+          <srai>SENARYO38</srai>
+        </li>
+        <li>
+          <srai>SENARYO39</srai>
+        </li>
+        <li>
+          <srai>SENARYO40</srai>
+        </li>
+        <li>
+          <srai>SENARYO41</srai>
+        </li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SALLAMA</pattern>
+    <template>Birbirimize boya tabancasıyla aynı anda ateş edeceğiz. <br/>İkimizin de canı 5.<br/> Mermi sayımız 12.<br/>Oyun birimiz ölene kadar devam edecek. <br/><br/>Hadi ATEŞ yaz çatışalım.</template>
+  </category>
+  <category>
+    <pattern>PAINTBALL OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>PAINT BALL OYUNU *</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>PAINTBALL OYUNU *</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SALLA</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SIKMACA</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>MERMI SIKMA</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>KURŞUN YAĞDIRMA OYUNU</pattern>
+    <template>
+      <srai>mermi sallama</srai>
+    </template>
+  </category>
+  <topic name="SENARYO41D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (1 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (1 isabetli + 1 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO41C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 1 (1 isabetli + 1 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 2 (1 isabetli atış + 1 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO41D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO41B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 3 (1 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 0 mermi yedim. Kalan mermim: 3 (2 isabetsiz atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO41C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO41A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 4 (2 isabetli + 2 isabetsiz atış), Kalan Canın: 3.<br/>BEN: 2 mermi yedim. Kalan mermim: 5 (1 isabetli + 2 isabetsiz atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO41B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO40D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (1 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 0 (1 isabetli + 1 isabetsiz atış), Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO40C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 1 (1 isabetli + 1 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 2 (1 isabetli atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO40D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO40B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 3 (2 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 0 mermi yedim. Kalan mermim: 3 (1 isabetsiz atış), Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO40C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO40A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 5 (1 isabetli + 1 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 4 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO40B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO39A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 3 (2 isabetli + 3 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 2 mermi yedim. Kalan mermim: 6 (3 isabetli + 0 isabetsiz atış), Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO37A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (1 isabetli + 4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (1 isabetli + 4 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO38A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 6 (3 isabetli + 0 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 3 mermi yedim. Kalan mermim: 3 (2 isabetli + 3 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO36A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 1 (1 isabetli + 3 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (1 isabetli + 4 isabetsiz atış), Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO35">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 6 (5 isabetli + 1 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 5 mermi yedim. Kalan mermim: 4 ( 5 isabetli +  3 isabetsiz atış), Kalan Canım: 0. <br/><br/>İkimiz de ÖLDÜK! İyi insanlardık be...<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO34">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 4 (5 isabetli + 3 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 5 mermi yedim. Kalan mermim: 5 ( 5 isabetli +  1 isabetsiz atış), Kalan Canım: 0. <br/><br/>İkimiz de ÖLDÜK! İyi insanlardık be...<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO33C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (1 isabetli atış), Kalan Canın: 0.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (1 isabetli atış), Kalan Canım: 0. <br/><br/>İkimiz de ÖLDÜK! İyi insanlardık be...<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO33B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 1 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 1 (3 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO33C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO33A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 5 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 4 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO33B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO32C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 0 (1 isabetli atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (1 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (1 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 0, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO32B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 1 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 1 (3 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32C</set></set></think></template>
+    </category>
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 1 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 1 (3 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO32A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 5 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 4 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32B</set></set></think></template>
+    </category>
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 5 (4 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 4 (2 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO32B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO31D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 0, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO31C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 0, Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 1, Kalan Canım: 1. <br/>Vuramadım...  ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO31D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO31B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 0, Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 2 (1 isabetsiz atış), Kalan Canım: 1. <br/>Vuramadım...  ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO31C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO31A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 0 (1 isabetli + 3 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 3 (3 isabetli + 2 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO31B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO30C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 1, Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 0, Kalan Canım: 1. <br/>Vuramadın ki...  ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO30D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO30D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 0, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO30B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 2 (1 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 0 mermi yedim. Kalan mermim: 0, Kalan Canım: 1. <br/>Vuramadın ki...  ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO30C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO30A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 3 (3 isabetli + 2 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 3 mermi yedim. Kalan mermim: 0 (1 isabetli + 3 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO30B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO29B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin:0 (1 isabetli + 1 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO29A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 2 (1 isabetli + 5 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 0 (2 isabetli + 5 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO29B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO28B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin:0, Kalan Canın: 0.<br/>BEN: 2 mermi yedim. Kalan mermim: 0 (1 isabetli + 1 isabetsiz atış), Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO28A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 0 (2 isabetli + 5 isabetsiz atış), Kalan Canın: 1.<br/>BEN: 2 mermi yedim. Kalan mermim: 2 (1 isabetli + 5 isabetsiz atış), Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO28B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO27B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin:6, Kalan Canın: 1.<br/>BEN: 2 mermi yedim. Kalan mermim: 0 (3 isabetli + 4 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO27A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 5 (3 isabetli + 3 isabetsiz atış), Kalan Canın: 4.<br/>BEN: 3 mermi yedim. Kalan mermim: 7 (1 isabetli + 4 isabetsiz atış), Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO27B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO24">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 4 (5 isabetli + 3 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 5 mermi yedim. Kalan mermim: 5 ( 2 isabetli +  6 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO25">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 5 (2 isabetli + 6 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 3 mermi yedim. Kalan mermim: 4 ( 5 isabetli +  3 isabetsiz atış), Kalan Canım: 2. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO26A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 7 (1 isabetli + 4 isabetsiz atış), Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 5 (3 isabetli + 3 isabetsiz atış), Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO26B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO26B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 0 (3 isabetli + 4 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 3 mermi yedim. Kalan mermim: 6, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO23">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 6 (5 isabetli + 1 isabetsiz atış), Kalan Canın: 4.<br/>BEN: 5 mermi yedim. Kalan mermim: 6 ( 1 isabetli +  5 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO22">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 6 (1 isabetli + 5 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 1 mermi yedim. Kalan mermim: 6 ( 5 isabetli +  1 isabetsiz atış), Kalan Canım: 4. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 5.<br/>BEN: 5 mermi yedim. Kalan mermim: 8 ( 4 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO21">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 5.<br/>BEN: 5 mermi yedim. Kalan mermim: 11, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO20">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 11, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 7, Kalan Canım: 5. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO18A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 6, Kalan Canın: 2.<br/>BEN: 3 mermi yedim. Kalan mermim: 5 (4 isabetsiz atış), Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO19A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 5 (4 isabetsiz atış), Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 6, Kalan Canım: 2. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO17A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 7, Kalan Canın: 2.<br/>BEN: 2 mermi yedim. Kalan mermim: 9, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO16A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 9, Kalan Canın: 0.<br/>BEN: 2 mermi yedim. Kalan mermim: 7, Kalan Canım: 2. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO15A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 4 mermi yedin. Kalan mermin: 10, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 7, Kalan Canım: 4. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO14A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 4.<br/>BEN: 4 mermi yedim. Kalan mermim: 10, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO13A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 6, Kalan Canın: 5.<br/>BEN: 5 mermi yedim. Kalan mermim: 10, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO12A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 5 mermi yedin. Kalan mermin: 10, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 6, Kalan Canım: 5. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO11B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 4 mermi yedin. Kalan mermin: 9, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 6, Kalan Canım: 4. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO11A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO11B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO10B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 6, Kalan Canın: 4.<br/>BEN: 4 mermi yedim. Kalan mermim: 9, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO10A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 4.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO10B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO9A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 10, Kalan Canın: 4.<br/>BEN: 0 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO9B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO9B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 6, Kalan Canın: 4.<br/>BEN: 4 mermi yedim. Kalan mermim: 9, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO8B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 4 mermi yedin. Kalan mermin: 9, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 6, Kalan Canım: 4. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO7B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 6, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 7, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO8A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 10, Kalan Canın: 4.<br/>BEN: 0 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO8B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO7A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 7, Kalan Canın: 2.<br/>BEN: 0 mermi yedim. Kalan mermim: 9, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO7B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO6B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 1.<br/>BEN: 2 mermi yedim. Kalan mermim: 6, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO6A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 9, Kalan Canın: 1.<br/>BEN: 2 mermi yedim. Kalan mermim: 7, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO6B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO5B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 3 mermi yedin. Kalan mermin: 7, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 7, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO5A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 8, Kalan Canın: 3.<br/>BEN: 2 mermi yedim. Kalan mermim: 10, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO5B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO4A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 2 mermi yedin. Kalan mermin: 10, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 8, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO4B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO4B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 1.<br/>BEN: 3 mermi yedim. Kalan mermim: 7, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO3D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 7, Kalan Canın: 0.<br/>BEN: 0 mermi yedim. Kalan mermim: 7, Kalan Canım: 1. <br/><br/>Sen ÖLDÜN!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO3C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 8, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 8, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO3D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO3B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 9, Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 9, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO3C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO3A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 3.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO3B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO2B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 9, Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 9, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO2C</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO2C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 8, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 8, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO2D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO2D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 0 mermi yedin. Kalan mermin: 7, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 7, Kalan Canım: 0. <br/><br/>Ben ÖLDÜM!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO2A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 3.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO2B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO1D">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 7, Kalan Canın: 0.<br/>BEN: 1 mermi yedim. Kalan mermim: 7, Kalan Canım: 0. <br/><br/>İkimiz de ÖLDÜK!<br/> Yeniden çatışmak istiyorsan MERMİ SALLAMA yaz!<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO1C">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 8, Kalan Canın: 1.<br/>BEN: 1 mermi yedim. Kalan mermim: 8, Kalan Canım: 1. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO1D</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO1A">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 10, Kalan Canın: 3.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 3. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO1B</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="SENARYO1B">
+    <category>
+      <pattern>ATEŞ</pattern>
+      <template>SEN: 1 mermi yedin. Kalan mermin: 9, Kalan Canın: 2.<br/>BEN: 1 mermi yedim. Kalan mermim: 9, Kalan Canım: 2. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO1C</set></set></think></template>
+    </category>
+  </topic>
+</aiml>
