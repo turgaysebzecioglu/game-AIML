@@ -136,7 +136,7 @@
     <template>SEN: 2 mermi yedin. Kalan mermin: 11, Kalan Canın: 3.<br/>BEN: 1 mermi yedim. Kalan mermim: 10, Kalan Canım: 4. <br/>Birimiz ölene kadar durmak yok ATEŞ yaz, ateşle!<think><set name="it"><set name="topic">SENARYO4A</set></set></think></template>
   </category>
   <category>
-    <pattern>OYUN18</pattern>
+    <pattern>GAME PAINTBALL</pattern>
     <template>
       <srai>mermi sallama</srai>
     </template>
@@ -184,7 +184,7 @@
     </template>
   </category>
   <category>
-    <pattern>OYUN 18</pattern>
+    <pattern>PAINTBALL GAME</pattern>
     <template>
       <srai>mermi sallama</srai>
     </template>
