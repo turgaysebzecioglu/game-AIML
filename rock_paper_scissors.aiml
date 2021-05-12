@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 05-12-2021 -->
+<!-- file: rock_paper_scissors.aiml -->
+<aiml version="1.0">
+  <topic name="TKM">
+    <category>
+      <pattern>TAŞ</pattern>
+      <template>
+        <random>
+          <li>Ben de TAŞ. Berabere kaldık.</li>
+          <li>Ben MAKAS. Beni kırarsın. Sen kazandın.</li>
+          <li>Ben KAĞIT. Seni sararım. Ben kazandım.</li>
+        </random>
+        <think>
+          <set name="it">
+            <set name="topic">TKM</set>
+          </set>
+        </think>
+      </template>
+    </category>
+    <category>
+      <pattern>MAKAS</pattern>
+      <template>
+        <random>
+          <li>Ben de MAKAS berabere kaldık.</li>
+          <li>Ben TAŞ. Seni kırarım. Ben kazandım.</li>
+          <li>Ben KAĞIT. Seni beni kesersin. Sen kazandın.</li>
+        </random>
+        <think>
+          <set name="it">
+            <set name="topic">TKM</set>
+          </set>
+        </think>
+      </template>
+    </category>
+    <category>
+      <pattern>KAĞIT</pattern>
+      <template>
+        <random>
+          <li>Ben de KAĞIT. Berabere kaldık.</li>
+          <li>Ben TAŞ. Sen beni sararsın. Sen kazandın.</li>
+          <li>Ben MAKAS. Ben seni keserim. Ben kazandım.</li>
+        </random>
+        <think>
+          <set name="it">
+            <set name="topic">TKM</set>
+          </set>
+        </think>
+      </template>
+    </category>
+  </topic>
+  <category>
+    <pattern>TAŞ KAĞIT MAKAS</pattern>
+    <template>Taş-kağıt-makas oyununa hoş geldin. Unutma, taş makası, kağıt taşı, makas da taşı yener. Hadi oynayalım! Taş mı, kağıt mı, makas mı?<think><set name="it"><set name="topic">TKM</set></set></think></template>
+  </category>
+  <category>
+    <pattern>TAŞ KAĞIT MAKAS *</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TKM</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TKM *</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ROCK PAPER SCISSORS</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ROCK PAPER SCISSORS GAME</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>GAME ROCK PAPER SCISSORS</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TKM OYUNU</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>TAŞ KAĞIT MAKAS OYUNU</pattern>
+    <template>
+      <srai>TAŞ KAĞIT MAKAS</srai>
+    </template>
+  </category>
+</aiml>
