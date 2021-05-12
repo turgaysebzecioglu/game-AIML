@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 05-12-2021 -->
+<!-- file: cointoss_game.aiml -->
+<aiml version="1.0">
+  <category>
+    <pattern>YAZI TURA AT</pattern>
+    <template>
+      <random>
+        <li><p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>.</li>
+        <li><p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>.</li>
+        <li>
+          <srai>YAZI TURA OYUNU</srai>
+        </li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>YAZI TURA AT*</pattern>
+    <template>
+      <srai>YAZI TURA AT</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YAZI TURA</pattern>
+    <template>Tamam atıyorum. <srai>YAZI TURA AT</srai></template>
+  </category>
+  <category>
+    <pattern>TURA YAZI</pattern>
+    <template>Yazı tura atmamı istiyorsun galiba? Tamam. <srai>YAZI TURA AT</srai></template>
+  </category>
+  <category>
+    <pattern>YAZI TURA OYNAYALIM*</pattern>
+    <template>
+      <srai>YAZI TURA OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>YAZI MI TURA MI</pattern>
+    <template>
+      <random>
+        <li>Ben tura diyorum. Attım. <srai>YAZI TURA AT</srai></li>
+        <li>Ben tura diyorum. Attım. <srai>YAZI TURA AT</srai></li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>BEN YAZI DIYORUM</pattern>
+    <template>Ben tura diyorum o zaman. Attım.<srai>YAZI TURA AT</srai></template>
+  </category>
+  <category>
+    <pattern>BEN TURA DIYORUM</pattern>
+    <template>Ben yazı diyorum o zaman. Attım.<srai>YAZI TURA AT</srai></template>
+  </category>
+  <category>
+    <pattern>YAZI TURA OYUNU</pattern>
+    <template>Yazı tura oyununa hoş geldin? Yazı mı tura mı?<think><set name="it"><set name="topic">OYUN YAZI TURA</set></set></think></template>
+  </category>
+  <category>
+    <pattern>COIN TOSS GAME</pattern>
+    <template>
+      <srai>YAZI TURA OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>GAME COIN TOSS</pattern>
+    <template>
+      <srai>YAZI TURA OYUNU</srai>
+    </template>
+  </category>
+  <topic name="OYUN YAZI TURA">
+    <category>
+      <pattern>TURA</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Ben kazandım.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Sen kazandın.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>YAZI</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Sen kazandın.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Ben kazandım.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>TURA D*</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Ben kazandım.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Sen kazandın.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>YAZI D*</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Sen kazandın.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Ben kazandım.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>BEN TURA*</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Ben kazandım.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Sen kazandın.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>BEN YAZI*</pattern>
+      <template>
+        <random>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>YAZI</b></font></p>. Sen kazandın.</li>
+          <li>Attım. <p><font face="calibri" size="6" color="red"><b>TURA</b></font></p>. Ben kazandım.</li>
+        </random>
+      </template>
+    </category>
+  </topic>
+</aiml>
