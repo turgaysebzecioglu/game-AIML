@@ -3,7 +3,7 @@
 <!-- Database Language: Turkish -->
 <!-- Bot Name: Gökbilge (www.gokbilge.net) -->
 <!-- Last Modified: 05-12-2021 -->
-<!-- file: cointoss_game.aiml -->
+<!-- File: cointoss_game.aiml -->
 <aiml version="1.0">
   <category>
     <pattern>YAZI TURA AT</pattern>
