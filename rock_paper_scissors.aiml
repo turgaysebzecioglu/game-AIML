@@ -3,7 +3,7 @@
 <!-- Database Language: Turkish -->
 <!-- Bot Name: Gökbilge (www.gokbilge.net) -->
 <!-- Last Modified: 05-12-2021 -->
-<!-- file: rock_paper_scissors.aiml -->
+<!-- File: rock_paper_scissors.aiml -->
 <aiml version="1.0">
   <topic name="TKM">
     <category>
