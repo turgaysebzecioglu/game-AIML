@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 05-12-2021 -->
+<!-- File: number_guessing.aiml -->
+<aiml version="1.0">
+  <topic name="RAKAM TAHMIN OYUNU">
+    <category>
+      <pattern>*</pattern>
+      <that>2 ILE ÇARP</that>
+      <template>10 ekle!</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>AKLINDAN BIR SAYI TUT</that>
+      <template>2 ile çarp!</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>10 EKLE</that>
+      <template>2'ye böl!</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>2 YE BÖL</that>
+      <template>Aklında tuttuğun ilk sayıyı çıkar!</template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>AKLINDA TUTTUĞUN ILK SAYIYI ÇIKAR</that>
+      <template>Sonuç 5.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>TUTTUM</pattern>
+      <that>AKLINDAN BIR SAYI TUT</that>
+      <template>2 ile çarp!</template>
+    </category>
+  </topic>
+  <category>
+    <pattern>RAKAM TAHMIN OYUNU</pattern>
+    <template>Aklından bir sayı tutacaksın ben de sorularla o sayıyı bulacağım. Oynamak istiyorsan RAKAM BUL OYUNU yaz.</template>
+  </category>
+  <category>
+    <pattern>NUMBER GUESSING GAME</pattern>
+    <template>
+      <srai>RAKAM TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>SAYI TAHMIN OYUNU</pattern>
+    <template>
+      <srai>RAKAM TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AKLIMDAKI RAKAMI BUL OYUNU</pattern>
+    <template>
+      <srai>RAKAM TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AKLIMDAKI SAYIYI BUL OYUNU</pattern>
+    <template>
+      <srai>RAKAM TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AKLIMDAN BIR SAYI TUTTUM*</pattern>
+    <template>
+      <srai>RAKAM TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>RAKAM BUL OYUNU</pattern>
+    <template>Aklından bir sayı tut.<think><set name="it"><set name="topic">RAKAM TAHMIN OYUNU</set></set></think></template>
+  </category>
+</aiml>
