@@ -4,6 +4,7 @@
 <!-- Bot Name: Gökbilge (www.gokbilge.net) -->
 <!-- Last Modified: 05-12-2021 -->
 <!-- File: number_guessing.aiml -->
+<!-- Game Description: Chatbot guesses the number you keep in mind. -->
 <aiml version="1.0">
   <topic name="RAKAM TAHMIN OYUNU">
     <category>
