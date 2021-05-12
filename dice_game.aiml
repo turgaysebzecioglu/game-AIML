@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Game Developer: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Last Modified: 05-12-2021 -->
+<!-- File: dice_game.aiml -->
+<!-- Game note: Gambling is a bad habit. This game is for entertainment purposes only. -->
+<aiml version="1.0">
+  <topic name="OYUN ZAR AT">
+    <category>
+      <pattern>TEK AT*</pattern>
+      <template>
+        <random>
+          <li>Tamam. 1 geldi.</li>
+          <li>Tamam. 2 geldi.</li>
+          <li>Tamam. 3 geldi.</li>
+          <li>Tamam. 4 geldi.</li>
+          <li>Tamam. 5 geldi.</li>
+          <li>Tamam. 6 geldi.</li>
+          <li>Tamam. 6 geldi. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li>2 geldi.</li>
+          <li>3 geldi.</li>
+          <li>4 geldi.</li>
+          <li>5 geldi.</li>
+          <li>6 geldi.</li>
+          <li>6 geldi.Yüksek rakam.</li>
+          <li>Attım. 1</li>
+          <li> Attım. 2</li>
+          <li> Attım. 3</li>
+          <li> Attım. 4</li>
+          <li> Attım. 5</li>
+          <li> Attım. 6</li>
+          <li> Attım. 6. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li> Attım. 2 geldi.</li>
+          <li> Attım. 3 geldi.</li>
+          <li> Attım. 4 geldi.</li>
+          <li> Attım. 5 geldi.</li>
+          <li> Attım. 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>TEK</pattern>
+      <template>
+        <random>
+          <li>Tamam. 1 geldi.</li>
+          <li>Tamam. 2 geldi.</li>
+          <li>Tamam. 3 geldi.</li>
+          <li>Tamam. 4 geldi.</li>
+          <li>Tamam. 5 geldi.</li>
+          <li>Tamam. 6 geldi.</li>
+          <li>Tamam. 6 geldi. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li>2 geldi.</li>
+          <li>3 geldi.</li>
+          <li>4 geldi.</li>
+          <li>5 geldi.</li>
+          <li>6 geldi.</li>
+          <li>6 geldi.Yüksek rakam.</li>
+          <li>Attım. 1</li>
+          <li> Attım. 2</li>
+          <li> Attım. 3</li>
+          <li> Attım. 4</li>
+          <li> Attım. 5</li>
+          <li> Attım. 6</li>
+          <li> Attım. 6. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li> Attım. 2 geldi.</li>
+          <li> Attım. 3 geldi.</li>
+          <li> Attım. 4 geldi.</li>
+          <li> Attım. 5 geldi.</li>
+          <li> Attım. 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>TEK TAŞ</pattern>
+      <template>
+        <random>
+          <li>Tamam. 1 geldi.</li>
+          <li>Tamam. 2 geldi.</li>
+          <li>Tamam. 3 geldi.</li>
+          <li>Tamam. 4 geldi.</li>
+          <li>Tamam. 5 geldi.</li>
+          <li>Tamam. 6 geldi.</li>
+          <li>Tamam. 6 geldi. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li>2 geldi.</li>
+          <li>3 geldi.</li>
+          <li>4 geldi.</li>
+          <li>5 geldi.</li>
+          <li>6 geldi.</li>
+          <li>6 geldi.Yüksek rakam.</li>
+          <li>Attım. 1</li>
+          <li> Attım. 2</li>
+          <li> Attım. 3</li>
+          <li> Attım. 4</li>
+          <li> Attım. 5</li>
+          <li> Attım. 6</li>
+          <li> Attım. 6. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li> Attım. 2 geldi.</li>
+          <li> Attım. 3 geldi.</li>
+          <li> Attım. 4 geldi.</li>
+          <li> Attım. 5 geldi.</li>
+          <li> Attım. 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>TEK TAŞ AT*</pattern>
+      <template>
+        <random>
+          <li>Tamam. 1 geldi.</li>
+          <li>Tamam. 2 geldi.</li>
+          <li>Tamam. 3 geldi.</li>
+          <li>Tamam. 4 geldi.</li>
+          <li>Tamam. 5 geldi.</li>
+          <li>Tamam. 6 geldi.</li>
+          <li>Tamam. 6 geldi. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li>2 geldi.</li>
+          <li>3 geldi.</li>
+          <li>4 geldi.</li>
+          <li>5 geldi.</li>
+          <li>6 geldi.</li>
+          <li>6 geldi.Yüksek rakam.</li>
+          <li>Attım. 1</li>
+          <li> Attım. 2</li>
+          <li> Attım. 3</li>
+          <li> Attım. 4</li>
+          <li> Attım. 5</li>
+          <li> Attım. 6</li>
+          <li> Attım. 6. Yüksek rakam.</li>
+          <li>1 geldi.</li>
+          <li> Attım. 2 geldi.</li>
+          <li> Attım. 3 geldi.</li>
+          <li> Attım. 4 geldi.</li>
+          <li> Attım. 5 geldi.</li>
+          <li> Attım. 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>ÇIFT</pattern>
+      <template>
+        <random>
+          <li>1 ve 1 geldi.</li>
+          <li>1 ve 2 geldi.</li>
+          <li>1 ve 3 geldi.</li>
+          <li>1 ve 4 geldi.</li>
+          <li>1 ve 5 geldi.</li>
+          <li>1 ve 6 geldi.</li>
+          <li>2 ve 1 geldi.</li>
+          <li>2 ve 2 geldi.</li>
+          <li>2 ve 3 geldi.</li>
+          <li>2 ve 4 geldi.</li>
+          <li>2 ve 5 geldi.</li>
+          <li>2 ve 6 geldi.</li>
+          <li>3 ve 1 geldi.</li>
+          <li>3 ve 2 geldi.</li>
+          <li>3 ve 3 geldi.</li>
+          <li>3 ve 4 geldi.</li>
+          <li>3 ve 5 geldi.</li>
+          <li>3 ve 6 geldi.</li>
+          <li>4 ve 1 geldi.</li>
+          <li>4 ve 2 geldi.</li>
+          <li>4 ve 3 geldi.</li>
+          <li>4 ve 4 geldi.</li>
+          <li>4 ve 5 geldi.</li>
+          <li>4 ve 6 geldi.</li>
+          <li>5 ve 1 geldi.</li>
+          <li>5 ve 2 geldi.</li>
+          <li>5 ve 3 geldi.</li>
+          <li>5 ve 4 geldi.</li>
+          <li>5 ve 5 geldi.</li>
+          <li>5 ve 6 geldi.</li>
+          <li>6 ve 1 geldi.</li>
+          <li>6 ve 2 geldi.</li>
+          <li>6 ve 3 geldi.</li>
+          <li>6 ve 4 geldi.</li>
+          <li>6 ve 5 geldi.</li>
+          <li>6 ve 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>ÇIFT TAŞ</pattern>
+      <template>
+        <random>
+          <li>1 ve 1 geldi.</li>
+          <li>1 ve 2 geldi.</li>
+          <li>1 ve 3 geldi.</li>
+          <li>1 ve 4 geldi.</li>
+          <li>1 ve 5 geldi.</li>
+          <li>1 ve 6 geldi.</li>
+          <li>2 ve 1 geldi.</li>
+          <li>2 ve 2 geldi.</li>
+          <li>2 ve 3 geldi.</li>
+          <li>2 ve 4 geldi.</li>
+          <li>2 ve 5 geldi.</li>
+          <li>2 ve 6 geldi.</li>
+          <li>3 ve 1 geldi.</li>
+          <li>3 ve 2 geldi.</li>
+          <li>3 ve 3 geldi.</li>
+          <li>3 ve 4 geldi.</li>
+          <li>3 ve 5 geldi.</li>
+          <li>3 ve 6 geldi.</li>
+          <li>4 ve 1 geldi.</li>
+          <li>4 ve 2 geldi.</li>
+          <li>4 ve 3 geldi.</li>
+          <li>4 ve 4 geldi.</li>
+          <li>4 ve 5 geldi.</li>
+          <li>4 ve 6 geldi.</li>
+          <li>5 ve 1 geldi.</li>
+          <li>5 ve 2 geldi.</li>
+          <li>5 ve 3 geldi.</li>
+          <li>5 ve 4 geldi.</li>
+          <li>5 ve 5 geldi.</li>
+          <li>5 ve 6 geldi.</li>
+          <li>6 ve 1 geldi.</li>
+          <li>6 ve 2 geldi.</li>
+          <li>6 ve 3 geldi.</li>
+          <li>6 ve 4 geldi.</li>
+          <li>6 ve 5 geldi.</li>
+          <li>6 ve 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>ÇIFT TAŞ AT*</pattern>
+      <template>
+        <random>
+          <li>1 ve 1 geldi.</li>
+          <li>1 ve 2 geldi.</li>
+          <li>1 ve 3 geldi.</li>
+          <li>1 ve 4 geldi.</li>
+          <li>1 ve 5 geldi.</li>
+          <li>1 ve 6 geldi.</li>
+          <li>2 ve 1 geldi.</li>
+          <li>2 ve 2 geldi.</li>
+          <li>2 ve 3 geldi.</li>
+          <li>2 ve 4 geldi.</li>
+          <li>2 ve 5 geldi.</li>
+          <li>2 ve 6 geldi.</li>
+          <li>3 ve 1 geldi.</li>
+          <li>3 ve 2 geldi.</li>
+          <li>3 ve 3 geldi.</li>
+          <li>3 ve 4 geldi.</li>
+          <li>3 ve 5 geldi.</li>
+          <li>3 ve 6 geldi.</li>
+          <li>4 ve 1 geldi.</li>
+          <li>4 ve 2 geldi.</li>
+          <li>4 ve 3 geldi.</li>
+          <li>4 ve 4 geldi.</li>
+          <li>4 ve 5 geldi.</li>
+          <li>4 ve 6 geldi.</li>
+          <li>5 ve 1 geldi.</li>
+          <li>5 ve 2 geldi.</li>
+          <li>5 ve 3 geldi.</li>
+          <li>5 ve 4 geldi.</li>
+          <li>5 ve 5 geldi.</li>
+          <li>5 ve 6 geldi.</li>
+          <li>6 ve 1 geldi.</li>
+          <li>6 ve 2 geldi.</li>
+          <li>6 ve 3 geldi.</li>
+          <li>6 ve 4 geldi.</li>
+          <li>6 ve 5 geldi.</li>
+          <li>6 ve 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>IKI TAŞ</pattern>
+      <template>
+        <random>
+          <li>1 ve 1 geldi.</li>
+          <li>1 ve 2 geldi.</li>
+          <li>1 ve 3 geldi.</li>
+          <li>1 ve 4 geldi.</li>
+          <li>1 ve 5 geldi.</li>
+          <li>1 ve 6 geldi.</li>
+          <li>2 ve 1 geldi.</li>
+          <li>2 ve 2 geldi.</li>
+          <li>2 ve 3 geldi.</li>
+          <li>2 ve 4 geldi.</li>
+          <li>2 ve 5 geldi.</li>
+          <li>2 ve 6 geldi.</li>
+          <li>3 ve 1 geldi.</li>
+          <li>3 ve 2 geldi.</li>
+          <li>3 ve 3 geldi.</li>
+          <li>3 ve 4 geldi.</li>
+          <li>3 ve 5 geldi.</li>
+          <li>3 ve 6 geldi.</li>
+          <li>4 ve 1 geldi.</li>
+          <li>4 ve 2 geldi.</li>
+          <li>4 ve 3 geldi.</li>
+          <li>4 ve 4 geldi.</li>
+          <li>4 ve 5 geldi.</li>
+          <li>4 ve 6 geldi.</li>
+          <li>5 ve 1 geldi.</li>
+          <li>5 ve 2 geldi.</li>
+          <li>5 ve 3 geldi.</li>
+          <li>5 ve 4 geldi.</li>
+          <li>5 ve 5 geldi.</li>
+          <li>5 ve 6 geldi.</li>
+          <li>6 ve 1 geldi.</li>
+          <li>6 ve 2 geldi.</li>
+          <li>6 ve 3 geldi.</li>
+          <li>6 ve 4 geldi.</li>
+          <li>6 ve 5 geldi.</li>
+          <li>6 ve 6 geldi.</li>
+        </random>
+      </template>
+    </category>
+  </topic>
+  <category>
+    <pattern>ZAR AT*</pattern>
+    <template>
+      <srai>zar at oyunu</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ZAR AT OYUNU</pattern>
+    <template>Zar at oyununa hoş geldin. Hatırlatalım kumar kötü bir alışkanlıktır. Bunu yalnızca bir oyun olarak oynamanızı tavsiye ediyorum. <p><font face="calibri" size="6" color="red"><b>TEK</b></font></p> mi yoksa <p><font face="calibri" size="6" color="red"><b>ÇİFT</b></font></p> mi zar atacaksın? <think><set name="it"><set name="topic">OYUN ZAR AT</set></set></think></template>
+  </category>
+  <category>
+    <pattern>DICE GAME</pattern>
+    <template>
+      <srai>zar at oyunu</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>GAME DICE</pattern>
+    <template>
+      <srai>zar at oyunu</srai>
+    </template>
+  </category>
+</aiml>
