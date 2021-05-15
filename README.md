@@ -1,5 +1,5 @@
 # game-AIML
--Game Developer: Turgay SEBZECİOĞLU.
+-Game Coder: Turgay SEBZECİOĞLU.
 
 -Games written in the AIML (Artificial Intelligence Markup Language).
 
