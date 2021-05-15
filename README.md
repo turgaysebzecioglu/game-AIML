@@ -5,4 +5,6 @@
 
 -The natural language of these games is Turkish.
 
--These games can be played with Chatbot Gökbilge (eng. SkyWise) living on www.gokbilge.net. 
+-These games are taken from the database of Gökbilge (eng. SkyWise), a Turkish chatbot. 
+
+-These games can be played with Chatbot Gökbilge living on www.gokbilge.net. 
