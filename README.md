@@ -1,4 +1,6 @@
 # game-AIML
+-Game Developer: Turgay SEBZECİOĞLU.
+
 -Games written in the AIML (Artificial Intelligence Markup Language).
 
 -The natural language of these games is Turkish.
