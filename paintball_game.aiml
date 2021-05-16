@@ -7,7 +7,7 @@
 <!-- Complies with the AIML 1.0 Standard -->
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 04-25-2021 -->
-<!-- file: paintball_game.aiml -->
+<!-- File Name: paintball_game.aiml -->
 <aiml version="1.0">
   <category>
     <pattern>SENARYO40</pattern>
