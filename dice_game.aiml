@@ -8,6 +8,7 @@
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
 <!-- File Name: dice_game.aiml -->
+<!-- Game Description: The chatbot will roll the dice for you. -->
 <!-- Game Note: Gambling is a bad habit. This game is for entertainment purposes only. -->
 <aiml version="1.0">
   <topic name="OYUN ZAR AT">
