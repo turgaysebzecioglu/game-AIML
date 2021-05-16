@@ -9,6 +9,7 @@
 <!-- Last Modified: 05-12-2021 -->
 <!-- File Name: cointoss_game.aiml -->
 <!-- Game Description: Chatbot will throw the money on the ground. Guess! Heads or tails? -->
+<!-- Game Note: The color and size of the font encoded in the game may not be suitable for your template. In such a case, change the font codes.  -->
 <aiml version="1.0">
   <category>
     <pattern>YAZI TURA AT</pattern>
