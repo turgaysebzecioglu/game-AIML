@@ -8,6 +8,7 @@
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
 <!-- File Name: rock_paper_scissors.aiml -->
+<!-- Game Description: It is a hand game for two players. -->
 <aiml version="1.0">
   <topic name="TKM">
     <category>
