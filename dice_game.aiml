@@ -7,8 +7,8 @@
 <!-- Complies with the AIML 1.0 Standard -->
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
-<!-- File: dice_game.aiml -->
-<!-- Game note: Gambling is a bad habit. This game is for entertainment purposes only. -->
+<!-- File Name: dice_game.aiml -->
+<!-- Game Note: Gambling is a bad habit. This game is for entertainment purposes only. -->
 <aiml version="1.0">
   <topic name="OYUN ZAR AT">
     <category>
