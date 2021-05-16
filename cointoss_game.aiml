@@ -7,7 +7,7 @@
 <!-- Complies with the AIML 1.0 Standard -->
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
-<!-- File: cointoss_game.aiml -->
+<!-- File Name: cointoss_game.aiml -->
 <aiml version="1.0">
   <category>
     <pattern>YAZI TURA AT</pattern>
