@@ -8,6 +8,8 @@
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 04-25-2021 -->
 <!-- File Name: paintball_game.aiml -->
+<!-- Game Description: You shoot mutually with the chat bot. Whoever runs out of life or bullets loses. -->
+<!-- Game Note: The feeling of violence is harmful. This game is purely for entertainment purposes. -->
 <aiml version="1.0">
   <category>
     <pattern>SENARYO40</pattern>
