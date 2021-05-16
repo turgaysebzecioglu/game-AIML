@@ -9,4 +9,4 @@
 
 -These games can be played with Chatbot Gökbilge living on www.gokbilge.net. 
 
-Contact: sebzecioglu@yahoo.com
+-Contact: sebzecioglu@yahoo.com
