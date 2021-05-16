@@ -8,6 +8,7 @@
 <!-- as adopted by the ALICE A.I. Foundation. -->
 <!-- Last Modified: 05-12-2021 -->
 <!-- File Name: cointoss_game.aiml -->
+<!-- Game Description: Chatbot will throw the money on the ground. Guess! Heads or tails? -->
 <aiml version="1.0">
   <category>
     <pattern>YAZI TURA AT</pattern>
