@@ -1,5 +1,5 @@
 # game-AIML
-[![License](https://img.shields.io/packagist/l/patrickschur/aiml-converter.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 -Game Coder: Turgay SEBZECİOĞLU.
 
