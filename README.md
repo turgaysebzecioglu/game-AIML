@@ -1,4 +1,6 @@
 # game-AIML
+[![License](https://img.shields.io/packagist/l/patrickschur/aiml-converter.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+
 -Game Coder: Turgay SEBZECİOĞLU.
 
 -Games written in the AIML (Artificial Intelligence Markup Language).
