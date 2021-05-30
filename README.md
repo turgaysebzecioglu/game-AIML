@@ -23,4 +23,4 @@
 
 *
 
-> _**Note:** It is planned to add new game files to this repository._
+> **Note:** It is planned to add new game files to this repository.
