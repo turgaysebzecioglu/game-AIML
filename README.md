@@ -1,13 +1,10 @@
 # game-AIML
 
-
-
-
 ![Turkish Chatbot: Gökbilge](http://www.gokbilge.net/gb/gui/pc/gokbilge3.png)
 
 > **CHATBOT GÖKBİLGE** 
 > 
-> **www.gokbilge.net**
+> _**www.gokbilge.net**_
 >
 > These games are taken from the database of **Gökbilge**, a Turkish chatbot.
 
