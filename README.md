@@ -22,3 +22,5 @@
 ## Games of Repository
 
 *
+
+> _**Note:** It is planned to add new game files to this repository._
