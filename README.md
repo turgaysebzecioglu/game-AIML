@@ -5,6 +5,10 @@
 
 ![Turkish Chatbot: Gökbilge](http://www.gokbilge.net/gb/gui/pc/gokbilge3.png)
 
+> **CHATBOT GÖKBİLGE** 
+> 
+> **www.gokbilge.net**
+>
 > These games are taken from the database of **Gökbilge**, a Turkish chatbot.
 
 ## General Information
