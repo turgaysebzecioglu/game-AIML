@@ -19,6 +19,7 @@
 
 ## Games of Repository
 
+* animal_guessing_game.aiml
 * cointoss_game.aiml
 * dice_game.aiml
 * find_age_game.aiml
