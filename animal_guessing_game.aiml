@@ -1,0 +1,2492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- These free codes are licensed under the MIT license -->
+<!-- Copyright (c) 2021 Turgay Sebzecioğlu -->
+<!-- Game Coder: Turgay SEBZECİOĞLU -->
+<!-- Database Language: Turkish -->
+<!-- Bot Name: Gökbilge (www.gokbilge.net) -->
+<!-- Complies with the AIML 1.0 Standard -->
+<!-- as adopted by the ALICE A.I. Foundation. -->
+<!-- Last Modified: 06-06-2021 -->
+<!-- File Name: animal_guessing_game.aiml -->
+<!-- Game Description: Chatbot will find the animal you have in mind. -->
+<!-- Game Note 1: This game has been prepared considering the data of the science of biology. -->
+<!-- Game Note 2: This game will increase students' knowledge about animals. -->
+<aiml version="1.0">
+  <category>
+    <pattern>HAYVAN TAHMIN OYUNU</pattern>
+    <template>Sen aklından bir hayvan tutacaksın ben de onu bileceğim. Oynamak istiyorsan HAYVAN BUL OYUNU yaz.</template>
+  </category>
+  <category>
+    <pattern>ANIMAL GUESSING GAME</pattern>
+    <template>
+      <srai>HAYVAN TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>FIND THE ANIMAL ON MY MIND</pattern>
+    <template>
+      <srai>HAYVAN TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AKLIMDAKI HAYVANI BIL OYUNU</pattern>
+    <template>
+      <srai>HAYVAN TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>AKLIMDAKI HAYVANI BUL OYUNU</pattern>
+    <template>
+      <srai>HAYVAN TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>ZIHNIMDEKI HAYVANI BUL OYUNU</pattern>
+    <template>
+      <srai>HAYVAN TAHMIN OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HAYVAN BUL OYUNU</pattern>
+    <template>Aklından bir hayvan tut ve sorularıma yalnızca EVET ve HAYIR biçiminde yanıt ver. Tamam mı?<think><set name="it"><set name="topic">13GIRIS0</set></set></think></template>
+  </category>
+  <category>
+    <pattern>DINOZOR</pattern>
+    <template>Soyu tükenmiş bir hayvan.</template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Bu hayvanı bulmak için ne sormalıydım?</template>
+  </category>
+  <category>
+    <pattern>OĞLAK</pattern>
+    <template>Oğlak keçinin yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>KUZU</pattern>
+    <template>Kuzu koyunun yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>TEKE</pattern>
+    <template>Teke keçinin erkeğidir.</template>
+  </category>
+  <category>
+    <pattern>BUZAĞI</pattern>
+    <template>Buzağı 0 ile 6 aylık arasındaki inek yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>DANA</pattern>
+    <template>Dana 6 ile 15 aylık arasındaki inek yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>TOSUN</pattern>
+    <template>Tosun 15 aylık ile 2 yaş arası erkek inek yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>DUVE</pattern>
+    <template>Düve doğum yapmamış inek yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>MALAK</pattern>
+    <template>Malak mandanın yavrusudur.</template>
+  </category>
+  <category>
+    <pattern>BOĞA</pattern>
+    <template>Kısırlaştırılmamış erkek sığır. Kısırlaştırılmışına öküz denir.</template>
+  </category>
+  <category>
+    <pattern>OKUZ</pattern>
+    <template>Kısırlaştırılmış erkek sığır.</template>
+  </category>
+  <category>
+    <pattern>MANDA</pattern>
+    <template>İnek, boğa gibi sığırgillerden olmayan bir hayvan.</template>
+  </category>
+  <category>
+    <pattern>ORNITORENK</pattern>
+    <template>Doğu Avustralya ve Tazmanya'da yaşayan ve gagalı bir memeli olan ornitorenk yarı deniz hayvanıdır.</template>
+  </category>
+  <category>
+    <pattern>AHU</pattern>
+    <template>Gazal gibi, ceylanın diğer bir adı diye biliyorum.</template>
+  </category>
+  <category>
+    <pattern>GAZAL</pattern>
+    <template>Ahu gibi, ceylanın diğer bir adı diye biliyorum.</template>
+  </category>
+  <category>
+    <pattern>REN GEYIĞI</pattern>
+    <template>Geyikgillerden, kuzey kutbuna yakın yerlerde yaşayan insanların binek olarak kullandığı evcil bir memeli.</template>
+  </category>
+  <category>
+    <pattern>PUMA</pattern>
+    <template>Dağ aslanı.</template>
+  </category>
+  <category>
+    <pattern>PANTER</pattern>
+    <template>Pars.</template>
+  </category>
+  <category>
+    <pattern>PARS</pattern>
+    <template>Panter, leopar, pelenk.</template>
+  </category>
+  <category>
+    <pattern>KARINCA</pattern>
+    <template>Omurgasız hayvanların eklembacaklılar kümesi içerisinde yer alan böcek ailesinden bir canlıdır.</template>
+  </category>
+  <category>
+    <pattern>HAYVAN BULMA OYUNU</pattern>
+    <template>
+      <srai>HAYVAN BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HAYVANI BULMA OYUNU</pattern>
+    <template>
+      <srai>HAYVAN BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HAYVANI BUL OYUNU</pattern>
+    <template>
+      <srai>HAYVAN BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>HAYVAN BUL OYUNU *</pattern>
+    <template>
+      <srai>HAYVAN BUL OYUNU</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>INSAN</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>İnsanı bu oyun kapsamında bir hayvan olarak belirlemedim.</template>
+  </category>
+  <category>
+    <pattern>GÖKBILGE</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Gülmedim dersem yalan söylemiş olurum.<srai>kimsin sen</srai></template>
+  </category>
+  <category>
+    <pattern>BOT</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Vay be! Demek bot diye bir hayvan da varmış.</template>
+  </category>
+  <category>
+    <pattern>ROBOT</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Vay be! Demek robot diye bir hayvan da varmış.</template>
+  </category>
+  <category>
+    <pattern>SOHBET BOTU</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Vay be! Demek sohbet botu diye bir hayvan da varmış.</template>
+  </category>
+  <category>
+    <pattern>YAPAY ZEKA</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>Vay be! Demek yapay zeka diye bir hayvan da varmış.</template>
+  </category>
+  <category>
+    <pattern>AT</pattern>
+    <that>AKLINDA TUTTUĞUN HAYVAN NEYDI</that>
+    <template>At evcil bir hayvandır.</template>
+  </category>
+  <topic name="13GIRIS0">
+    <category>
+      <pattern>*</pattern>
+      <that>AKLINDAN BIR HAYVAN TUT VE SORULARIMA YALNIZCA EVET VE HAYIR BIÇIMINDE YANIT VER TAMAM MI</that>
+      <template>Memeli bir hayvan mı?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>MEMELI BIR HAYVAN MI</that>
+      <template>Gagalı ve kanatlı mı?<think><set name="it"><set name="topic"> 13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GAGALI VE KANATLI MI</that>
+      <template>Sürüngen mi?<think><set name="it"><set name="topic"> 13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SÜRÜNGEN MI</that>
+      <template>Zıplayabilir mi?<think><set name="it"><set name="topic"> 13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ZIPLAYABILIR MI</that>
+      <template>Suda mı yaşar?<think><set name="it"><set name="topic">13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SUDA MI YAŞAR</that>
+      <template>Omurgasız bir hayvan mı?<think><set name="it"><set name="topic"> 13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>OMURGASIZ BIR HAYVAN MI</that>
+      <template>Aklından bir hayvan tuttuğuna emin misin?<think><set name="it"><set name="topic"> 13GIRIS0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>AKLINDAN BIR HAYVAN TUTTUĞUNA EMIN MISIN</that>
+      <template>
+        <random>
+          <li> Aklındaki hayvanı bulmak için ne sormalıydım?</li>
+          <li> Aklında bir hayvan varsa adı neydi?</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>MEMELI BIR HAYVAN MI</that>
+      <template>Bu memeli hayvan uçar mı?<think><set name="it"><set name="topic"> 13MM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GAGALI VE KANATLI MI</that>
+      <template>Evcil bir kuş mu?<think><set name="it"><set name="topic">13GK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SÜRÜNGEN MI</that>
+      <template>Ayaksız uzun bir hayvan mıdır?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ZIPLAYABILIR MI</that>
+      <template>Hem suda hem de karada yaşayan patlak gözlü bir hayvan mı?<think><set name="it"><set name="topic">13ZP0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SUDA MI YAŞAR</that>
+      <template>Aklından tuttuğun hayvan alt türlerini düşünmeden yalnızca balık mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>OMURGASIZ BIR HAYVAN MI</that>
+      <template>Vücutları deliklerle kaplı, çoğu kayalara tutunmuş olarak koloniler durumunda yaşayan bir hayvan mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13MM0">
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU MEMELI HAYVAN HEM KARADA HEM DE SUDA MI YAŞAYABILIR</that>
+      <template>Aklından memeli bir hayvan tuttuğuna emin misin?<think><set name="it"><set name="topic"> 13MM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU MEMELI HAYVAN UÇAR MI</that>
+      <template>Bu memeli yalnızca suda mı yaşayabilir?<think><set name="it"><set name="topic"> 13MM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU MEMELI YALNIZCA SUDA MI YAŞAYABILIR</that>
+      <template>Bu memeli hayvan yalnızca karada mı yaşayabilir?<think><set name="it"><set name="topic"> 13MM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU MEMELI HAYVAN YALNIZCA KARADA MI YAŞAYABILIR</that>
+      <template>Bu memeli hayvan hem karada hem de suda mı yaşayabilir?<think><set name="it"><set name="topic">13MM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>*</pattern>
+      <that>AKLINDAN MEMELI BIR HAYVAN TUTTUĞUNA EMIN MISIN</that>
+      <template>
+        <random>
+          <li> Aklındaki memeli hayvanı bulmak için ne sormalıydım?</li>
+          <li> Aklında memeli bir hayvan varsa adı neydi?</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU MEMELI HAYVAN UÇAR MI</that>
+      <template>Bu uçan memeli hayvan yarasa mı?<think><set name="it"><set name="topic"> 13UCANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU MEMELI YALNIZCA SUDA MI YAŞAYABILIR</that>
+      <template>Filden büyük bir su memelisi midir?<think><set name="it"><set name="topic"> 13SUDAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU MEMELI HAYVAN YALNIZCA KARADA MI YAŞAYABILIR</that>
+      <template>Evcil bir hayvan mı?<think><set name="it"><set name="topic"> 13KARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU MEMELI HAYVAN HEM KARADA HEM DE SUDA MI YAŞAYABILIR</that>
+      <template>Kulak kepçesi olmayan, postu değerli etçil bir deniz memelisi mi?<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13UCANMM0">
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU UÇAN MEMELI HAYVAN YARASA MI</that>
+      <template>
+        <random>
+          <li>Ne peki? Uçakta seyahat eden bir fil mi?</li>
+          <li>Aklında tuttuğun hayvan neydi?</li>
+        </random>
+      </template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU UÇAN MEMELI HAYVAN YARASA MI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13SUDAMM0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>FILDEN BÜYÜK BIR SU MEMELISI MIDIR?</that>
+      <template>Bu yüzen memeli balina mı?<think><set name="it"><set name="topic"> 13SUDAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>FILDEN BÜYÜK BIR SU MEMELISI MIDIR?</that>
+      <template>İletişimi güçlü zeki ve sevimli bir su memelisi midir?<think><set name="it"><set name="topic"> 13SUDAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>İLETIŞIMI GÜÇLÜ ZEKI VE SEVIMLI BIR SU MEMELISI MIDIR</that>
+      <template>Bu hayvan yunus mu?<think><set name="it"><set name="topic">13SUDAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>İLETIŞIMI GÜÇLÜ ZEKI VE SEVIMLI BIR SU MEMELISI MIDIR</that>
+      <template>Aklında tuttuğun yüzen memeli hem denizde hem de karada yaşıyabilen deniz aslanı veya fok gibi bir hayvansa bulamamam normal.</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU YÜZEN MEMELI BALINA MI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU YÜZEN MEMELI BALINA MI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13KARADAMM0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVCIL BIR HAYVAN MI</that>
+      <template>Etobur mu?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EVCIL BIR HAYVAN MI</that>
+      <template>Gagası olan bir memeli midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13KARADAEVCILMM0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>ETOBUR MU</that>
+      <template>Kemirgen mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KULAKLARI UZUN MU</that>
+      <template>Aklında tuttuğun evcil hayvan tavşan o zaman.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KEMIRGEN MI</that>
+      <template>Kulakları uzun mu?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN EVCIL HAYVAN TAVŞAN O ZAMAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN EVCIL HAYVAN TAVŞAN O ZAMAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KULAKLARI UZUN MU</that>
+      <template>Aklında tuttuğun evcil hayvan hamster o zaman.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN EVCIL HAYVAN HAMSTER O ZAMAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN EVCIL HAYVAN HAMSTER O ZAMAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KEMIRGEN MI</that>
+      <template>Evde beslenebilir mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVDE BESLENEBILIR MI</that>
+      <template>Genellikle tasmayla gezdirilen bir hayvan mıdır?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GENELLIKLE TASMAYLA GEZDIRILEN BIR HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan köpek.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GENELLIKLE TASMAYLA GEZDIRILEN BIR HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan kedi.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KÖPEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KEDI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ETOBUR MU</that>
+      <template>Otobur mu?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>OTOBUR MU</that>
+      <template>Büyükbaş bir otobur mu?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BÜYÜKBAŞ BIR OTOBUR MU</that>
+      <template>Çölde susuzluğa uzun süre dayanabilir mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇÖLDE SUSUZLUĞA UZUN SÜRE DAYANABILIR MI</that>
+      <template>Aklından tuttuğun hayvan deve.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DEVE</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DEVE</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÇÖLDE SUSUZLUĞA UZUN SÜRE DAYANABILIR MI</that>
+      <template>Evcil otoburlar içerisinde en hızlı koşan hayvan mıdır?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVCIL OTOBURLAR IÇERISINDE EN HIZLI KOŞAN HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan at.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AT</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AT</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EVCIL OTOBURLAR IÇERISINDE EN HIZLI KOŞAN HAYVAN MIDIR</that>
+      <template>Eti yenmeyen bir yük hayvanı mıdır?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ETI YENMEYEN BIR YÜK HAYVANI MIDIR</that>
+      <template>Çoğu kez kısır olan melez bir hayvan mıdır?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇOĞU KEZ KISIR OLAN MELEZ BIR HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan katır.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KATIR</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KATIR</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÇOĞU KEZ KISIR OLAN MELEZ BIR HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan eşek.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN EŞEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN EŞEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ETI YENMEYEN BIR YÜK HAYVANI MIDIR</that>
+      <template>Süt verir mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SÜT VERIR MI</that>
+      <template>Aklından tuttuğun hayvan inek.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN INEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN INEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SÜT VERIR MI</that>
+      <template>Aklından tuttuğun hayvan öküz.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖKÜZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖKÜZ</that>
+      <template>Aklında tuttuğun hayvan neydi? Boğa mı yoksa. Boğa kısırlaştırılmamış erkek sığırdır.</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BÜYÜKBAŞ BIR OTOBUR MU</that>
+      <template>Dişi mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>DIŞI MI</that>
+      <template>Bu hayvanın dağlarda yaşayan akrabası var mıdır?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BU HAYVANIN DAĞLARDA YAŞAYAN AKRABASI VAR MIDIR</that>
+      <template>Aklından tuttuğun hayvan keçi.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KEÇI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KEÇI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BU HAYVANIN DAĞLARDA YAŞAYAN AKRABASI VAR MIDIR</that>
+      <template>Aklından tuttuğun hayvan koyun.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOYUN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOYUN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>DIŞI MI</that>
+      <template>Sarp dağlarda yaşayan bir akrabası var mı?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SARP DAĞLARDA YAŞAYAN BIR AKRABASI VAR MI</that>
+      <template>Aklından tuttuğun hayvan teke.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TEKE</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TEKE</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SARP DAĞLARDA YAŞAYAN BIR AKRABASI VAR MI</that>
+      <template>Erkek koyun mu?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOÇ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOÇ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ERKEK KOYUN MU</that>
+      <template>Aklından tuttuğun hayvan koç.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>HEPÇIL MI</that>
+      <template>Çamurda debelenmeyi seven, eti, yağı, derisi veya kılı için beslenen, evcil hayvan bir çift tırnaklı mı?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇAMURDA DEBELENMEYI SEVEN ETI YAĞI DERISI VEYA KILI IÇIN BESLENEN EVCIL HAYVAN BIR ÇIFT TIRNAKLI MI</that>
+      <template>Aklından tuttuğun hayvan domuz.<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DOMUZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DOMUZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>OTOBUR MU</that>
+      <template>Hepçil mi?<think><set name="it"><set name="topic">13KARADAEVCILMM0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13KARADAYABANMM0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>GAGASI OLAN BIR MEMELI MIDIR</that>
+      <template>Aklından tuttuğun hayvan karıncayiyen.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARINCAYIYEN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARINCAYIYEN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GAGASI OLAN BIR MEMELI MIDIR</that>
+      <template>Kesesi olan bir memeli midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KESESI OLAN BIR MEMELI MIDIR</that>
+      <template>Saldırgan ve yırtıcı bir memeli midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SALDIRGAN VE YIRTICI BIR MEMELI MIDIR</that>
+      <template>Aklından tuttuğun hayvan tazmanya canavarı.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAZMANYA CANAVARI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAZMANYA CANAVARI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SALDIRGAN VE YIRTICI BIR MEMELI MIDIR</that>
+      <template>Zıplamasıyla meşhur bir keseli midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ZIPLAMASIYLA MEŞHUR BIR KESELI MIDIR</that>
+      <template>Aklından tuttuğun hayvan kanguru.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KANGURU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KANGURU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ZIPLAMASIYLA MEŞHUR BIR KESELI MIDIR</that>
+      <template>Aklından tuttuğun hayvan koala.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOALA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOALA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KESESI OLAN BIR MEMELI MIDIR</that>
+      <template>İnsana çok benzeyen hayvanlardan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>İNSANA ÇOK BENZEYEN HAYVANLARDAN MI</that>
+      <template>Kendi türü içerisinde en iri olanı mıdır?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KENDI TÜRÜ IÇERISINDE EN IRI OLANI MIDIR</that>
+      <template>Aklından tuttuğun hayvan goril.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GORIL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GORIL</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KENDI TÜRÜ IÇERISINDE EN IRI OLANI MIDIR</that>
+      <template>Aklından tuttuğun hayvan maymun ya da onun akrabaları olan orangutan, şempanze gibi hayvanlardan biri olmalı.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MAYMUN YA DA ONUN AKRABALARI OLAN ORANGUTAN ŞEMPANZE GIBI HAYVANLARDAN BIRI OLMALI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MAYMUN YA DA ONUN AKRABALARI OLAN ORANGUTAN ŞEMPANZE GIBI HAYVANLARDAN BIRI OLMALI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>İNSANA ÇOK BENZEYEN HAYVANLARDAN MI</that>
+      <template>Kedigillerden bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KEDIGILLERDEN BIR HAYVAN MI</that>
+      <template>Evcil kedi boyutuna yakın bir kedi türü mü?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVCIL KEDI BOYUTUNA YAKIN BIR KEDI TÜRÜ MÜ</that>
+      <template>Aklından tuttuğun hayvan vaşak.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN VAŞAK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN VAŞAK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EVCIL KEDI BOYUTUNA YAKIN BIR KEDI TÜRÜ MÜ</that>
+      <template>Erkek olanı iri ve yeleli midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ERKEK OLANI IRI VE YELELI MIDIR</that>
+      <template>Aklından tuttuğun hayvan aslan.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ASLAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ASLAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ERKEK OLANI IRI VE YELELI MIDIR</that>
+      <template>Düz çizgili iri bir kedi mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>DÜZ ÇIZGILI IRI BIR KEDI MI</that>
+      <template>Aklından tuttuğun hayvan kaplan.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAPLAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAPLAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>DÜZ ÇIZGILI IRI BIR KEDI MI</that>
+      <template>Benekli en hızlı kedi midir?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BENEKLI EN HIZLI KEDI MIDIR</that>
+      <template>Aklından tuttuğun hayvan çita.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇITA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇITA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BENEKLI EN HIZLI KEDI MIDIR</that>
+      <template>Genellikle koyu rengi nedeniyle kara sıfatıyla anılan bir kedi mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GENELLIKLE KOYU RENGI NEDENIYLE KARA SIFATIYLA ANILAN BIR KEDI MI</that>
+      <template>Aklından tuttuğun hayvan panter.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PANTER</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PANTER</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GENELLIKLE KOYU RENGI NEDENIYLE KARA SIFATIYLA ANILAN BIR KEDI MI</that>
+      <template>Kaplan ve aslandan sonra dünyanın üçüncü büyük kedisi olarak bilinen benekli bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KAPLAN VE ASLANDAN SONRA DÜNYANIN ÜÇÜNCÜ BÜYÜK KEDISI OLARAK BILINEN BENEKLI BIR HAYVAN MI</that>
+      <template>Çin, Hindistan, Orta Doğu ve Afrika bölgelerinde yaşayan ve eski dünya kedisi olarak bilinen bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KAPLAN VE ASLANDAN SONRA DÜNYANIN ÜÇÜNCÜ BÜYÜK KEDISI OLARAK BILINEN BENEKLI BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan jaguar.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN JAGUAR</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN JAGUAR</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇIN HINDISTAN ORTA DOĞU VE AFRIKA BÖLGELERINDE YAŞAYAN VE ESKI DÜNYA KEDISI OLARAK BILINEN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan leopar, yani pars.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN LEOPAR YANI PARS</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN LEOPAR YANI PARS</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÇIN HINDISTAN ORTA DOĞU VE AFRIKA BÖLGELERINDE YAŞAYAN VE ESKI DÜNYA KEDISI OLARAK BILINEN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan puma.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PUMA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PUMA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KEDIGILLERDEN BIR HAYVAN MI</that>
+      <template>Leş yiyicilerden yırtıcı bir memeli hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>LEŞ YIYICILERDEN YIRTICI BIR MEMELI HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan sırtlan.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SIRTLAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SIRTLAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>LEŞ YIYICILERDEN YIRTICI BIR MEMELI HAYVAN MI</that>
+      <template>Köpekgillerden bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KÖPEKGILLERDEN BIR HAYVAN MI?</that>
+      <template>Köpekgillerin en büyük üyesi olan bu canlı Türk destanlarında da önemli bir sembol müdür?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KÖPEKGILLERIN EN BÜYÜK ÜYESI OLAN BU CANLI TÜRK DESTANLARINDA DA ÖNEMLI BIR SEMBOL MÜDÜR</that>
+      <template>Aklından tuttuğun hayvan kurt.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KURT</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KURT</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KÖPEKGILLERIN EN BÜYÜK ÜYESI OLAN BU CANLI TÜRK DESTANLARINDA DA ÖNEMLI BIR SEMBOL MÜDÜR</that>
+      <template>Tavuk hırısızı olarak bilinen kurnaz bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>TAVUK HIRISIZI OLARAK BILINEN KURNAZ BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan tilki.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TILKI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TILKI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>TAVUK HIRISIZI OLARAK BILINEN KURNAZ BIR HAYVAN MI</that>
+      <template>Kurttan küçük tilkiden daha iri olan kurnaz bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KURTTAN KÜÇÜK TILKIDEN DAHA IRI OLAN KURNAZ BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan çakal.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇAKAL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇAKAL</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KÖPEKGILLERDEN BIR HAYVAN MI?</that>
+      <template>Eşeğe benzeyen çizgili bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EŞEĞE BENZEYEN ÇIZGILI BIR HAYVAN MI</that>
+      <template>Aklında tuttuğun hayvan zebra.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN ZEBRA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN ZEBRA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EŞEĞE BENZEYEN ÇIZGILI BIR HAYVAN MI</that>
+      <template>Neredeyse fil kadar iri olan tek boynuzlu bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>NEREDEYSE FIL KADAR IRI OLAN TEK BOYNUZLU BIR HAYVAN MI</that>
+      <template>Aklında tuttuğun hayvan gergedan.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN GERGEDAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN GERGEDAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>NEREDEYSE FIL KADAR IRI OLAN TEK BOYNUZLU BIR HAYVAN MI</that>
+      <template>Boynu çok uzun otobur bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BOYNU ÇOK UZUN OTOBUR BIR HAYVAN MI</that>
+      <template>Aklında tuttuğun hayvan zürafa.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN ZÜRAFA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN ZÜRAFA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BOYNU ÇOK UZUN OTOBUR BIR HAYVAN MI</that>
+      <template>Karada yaşayan en iri hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KARADA YAŞAYAN EN IRI HAYVAN MI</that>
+      <template>Aklında tuttuğun hayvan fil.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN FIL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDA TUTTUĞUN HAYVAN FIL</that>
+      <template>Aklında tuttuğun hayvan neydi? Dinozor mu?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KARADA YAŞAYAN EN IRI HAYVAN MI</that>
+      <template>Geviş getiren otçul bir memeli mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GEVIŞ GETIREN OTÇUL BIR MEMELI MI</that>
+      <template>İnsanların beslediği evcil bir türü var mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>İNSANLARIN BESLEDIĞI EVCIL BIR TÜRÜ VAR MI</that>
+      <template>Aklından tuttuğun hayvan dağ keçisi.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DAĞ KEÇISI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DAĞ KEÇISI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>İNSANLARIN BESLEDIĞI EVCIL BIR TÜRÜ VAR MI</that>
+      <template>Erkeklerinin uzun çatallı boynuzları mı var?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ERKEKLERININ UZUN ÇATALLI BOYNUZLARI MI VAR</that>
+      <template>Aklından tuttuğun hayvan geyik.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GEYIK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GEYIK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ERKEKLERININ UZUN ÇATALLI BOYNUZLARI MI VAR</that>
+      <template>Güzel gözlü ve zarif bir boynuzlugillerden mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GÜZEL GÖZLÜ VE ZARIF BIR BOYNUZLUGILLERDEN MI?</that>
+      <template>Aklından tuttuğun hayvan ceylan.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN CEYLAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN CEYLAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GEVIŞ GETIREN OTÇUL BIR MEMELI MI</that>
+      <template>Kocaoğlan sıfatıyla anılan iri gövdeli ve beş parmaklı bir memeli mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KOCAOĞLAN SIFATIYLA ANILAN IRI GÖVDELI VE BEŞ PARMAKLI BIR MEMELI MI</that>
+      <template>Aklından tuttuğun hayvan ayı.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AYI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AYI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KOCAOĞLAN SIFATIYLA ANILAN IRI GÖVDELI VE BEŞ PARMAKLI BIR MEMELI MI</that>
+      <template>Sırtında dikenler bulunan memeli bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SIRTINDA DIKENLER BULUNAN MEMELI BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan kirpi.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KIRPI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KIRPI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SIRTINDA DIKENLER BULUNAN MEMELI BIR HAYVAN MI</that>
+      <template>Ağaçlarda yaşayan uzun kuyruklu bir memeli mi?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AĞAÇLARDA YAŞAYAN UZUN KUYRUKLU BIR MEMELI MI</that>
+      <template>Aklından tuttuğun hayvan sincap.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SINCAP</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SINCAP</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AĞAÇLARDA YAŞAYAN UZUN KUYRUKLU BIR MEMELI MI</that>
+      <template>Siyah beyaz rengiyle meşhur ayı iriliğinde sevimli bir otobur mu?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SIYAH BEYAZ RENGIYLE MEŞHUR AYI IRILIĞINDE SEVIMLI BIR OTOBUR MU</that>
+      <template>Aklından tuttuğun hayvan panda.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PANDA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PANDA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SIYAH BEYAZ RENGIYLE MEŞHUR AYI IRILIĞINDE SEVIMLI BIR OTOBUR MU</that>
+      <template>Bağ ve bahçelere zarar veren saldırgan, çift toynaklı, yabani bir hayvan mı?<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BAĞ VE BAHÇELERE ZARAR VEREN SALDIRGAN ÇIFT TOYNAKLI YABANI BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan yaban domuzu.<think><set name="it"><set name="topic">13KARADAYABANMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YABAN DOMUZU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YABAN DOMUZU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13SUDAKARADAMM0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>KULAK KEPÇESI OLMAYAN POSTU DEĞERLI ETÇIL BIR DENIZ MEMELISI MI</that>
+      <template>Aklından tuttuğun hayvan fok.<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN FOK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN FOK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KULAK KEPÇESI OLMAYAN POSTU DEĞERLI ETÇIL BIR DENIZ MEMELISI MI</that>
+      <template>Kulak kepçesi ve karada yaşayan bir adaşı olan, etçil bir deniz memelisi mi?<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KULAK KEPÇESI VE KARADA YAŞAYAN BIR ADAŞI OLAN ETÇIL BIR DENIZ MEMELISI MI</that>
+      <template>Aklından tuttuğun hayvan deniz aslanı.<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ ASLANI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ ASLANI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KULAK KEPÇESI VE KARADA YAŞAYAN BIR ADAŞI OLAN ETÇIL BIR DENIZ MEMELISI MI</that>
+      <template>Deniz aygırı olarak da anılan uzun dişli bir yarı sucul memeli mi?<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>DENIZ AYGIRI OLARAK DA ANILAN UZUN DIŞLI BIR YARI SUCUL MEMELI MI</that>
+      <template>Aklından tuttuğun hayvan mors.<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MORS</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MORS</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>DENIZ AYGIRI OLARAK DA ANILAN UZUN DIŞLI BIR YARI SUCUL MEMELI MI</that>
+      <template>Nehir ve göl kıyılarında yaşayan, adında değerli kürküyle ilgili bir sözcük bulunan sansargillerden bir hayvan mı?<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>NEHIR VE GÖL KIYILARINDA YAŞAYAN ADINDA DEĞERLI KÜRKÜYLE ILGILI BIR SÖZCÜK BULUNAN SANSARGILLERDEN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan su samuru.<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SU SAMURU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SU SAMURU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>NEHIR VE GÖL KIYILARINDA YAŞAYAN ADINDA DEĞERLI KÜRKÜYLE ILGILI BIR SÖZCÜK BULUNAN SANSARGILLERDEN BIR HAYVAN MI</that>
+      <template>Kuyruğu geniş ve yassı, art ayak parmaklarının arası perdeli, su kıyılarında yaşayan, yuvalar ve su setleri kuran kemirgen bir hayvan mı?<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KUYRUĞU GENIŞ VE YASSI ART AYAK PARMAKLARININ ARASI PERDELI SU KIYILARINDA YAŞAYAN YUVALAR VE SU SETLERI KURAN KEMIRGEN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan kunduz.<think><set name="it"><set name="topic">13SUDAKARADAMM0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KUNDUZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KUNDUZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13GK0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVCIL BIR KUŞ MU</that>
+      <template>Adı duyduklarını düşünmeden söyleyen kişiler için de kullanılan taklitçi bir kuş mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EVCIL BIR KUŞ MU</that>
+      <template>Bilgeliğin ve uğursuzluğun sembolü olan bir gece kuşu mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13EVCILGK0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>ADI DUYDUKLARINI DÜŞÜNMEDEN SÖYLEYEN KIŞILER IÇIN DE KULLANILAN TAKLITÇI BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan papağan.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PAPAĞAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PAPAĞAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ADI DUYDUKLARINI DÜŞÜNMEDEN SÖYLEYEN KIŞILER IÇIN DE KULLANILAN TAKLITÇI BIR KUŞ MU</that>
+      <template>Papağan gibi sesleri taklit edebilen uzun ve sivri kuyruklu bir kuş mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>PAPAĞAN GIBI SESLERI TAKLIT EDEBILEN UZUN VE SIVRI KUYRUKLU BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan muhabbet kuşu.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MUHABBET KUŞU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MUHABBET KUŞU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>PAPAĞAN GIBI SESLERI TAKLIT EDEBILEN UZUN VE SIVRI KUYRUKLU BIR KUŞ MU</that>
+      <template>İspinozgillerden yeşilimsi ve sarı tüylü ötücü bir kuş mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>İSPINOZGILLERDEN YEŞILIMSI VE SARI TÜYLÜ ÖTÜCÜ BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan kanarya.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KANARYA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KANARYA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>İSPINOZGILLERDEN YEŞILIMSI VE SARI TÜYLÜ ÖTÜCÜ BIR KUŞ MU</that>
+      <template>Adı divan şiirlerinde sıkça geçen güzel sesli ötücü bir kuş mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ADI DIVAN ŞIIRLERINDE SIKÇA GEÇEN GÜZEL SESLI ÖTÜCÜ BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan bülbül.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BÜLBÜL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BÜLBÜL</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ADI DIVAN ŞIIRLERINDE SIKÇA GEÇEN GÜZEL SESLI ÖTÜCÜ BIR KUŞ MU</that>
+      <template>Suda yüzmeyen, eti ve yumurtası için beslenen dişi bir kümes hayvanı mı?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SUDA YÜZMEYEN ETI VE YUMURTASI IÇIN BESLENEN DIŞI BIR KÜMES HAYVANI MI</that>
+      <template>Aklından tuttuğun hayvan tavuk.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAVUK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAVUK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SUDA YÜZMEYEN ETI VE YUMURTASI IÇIN BESLENEN DIŞI BIR KÜMES HAYVANI MI</that>
+      <template>Sabahları öterek bizi uyandıran bir kümes hayvanı mı?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SABAHLARI ÖTEREK BIZI UYANDIRAN BIR KÜMES HAYVANI MI</that>
+      <template>Aklından tuttuğun hayvan horoz.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HOROZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HOROZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SABAHLARI ÖTEREK BIZI UYANDIRAN BIR KÜMES HAYVANI MI</that>
+      <template>Sülüngillerden, erkeğinin uzun ve parlak tüyleri olan süslü bir kümes hayvanı mı?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SÜLÜNGILLERDEN ERKEĞININ UZUN VE PARLAK TÜYLERI OLAN SÜSLÜ BIR KÜMES HAYVANI MI</that>
+      <template>Aklından tuttuğun hayvan tavus kuşu.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAVUS KUŞU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TAVUS KUŞU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SÜLÜNGILLERDEN ERKEĞININ UZUN VE PARLAK TÜYLERI OLAN SÜSLÜ BIR KÜMES HAYVANI MI</that>
+      <template>Yılbaşında sıkça gördüğümüz tavukgillerden, boynu ve başı çıplak bir kümes hayvanı mı?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YILBAŞINDA SIKÇA GÖRDÜĞÜMÜZ TAVUKGILLERDEN BOYNU VE BAŞI ÇIPLAK BIR KÜMES HAYVANI MI</that>
+      <template>Aklından tuttuğun hayvan hindi.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HINDI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HINDI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>YILBAŞINDA SIKÇA GÖRDÜĞÜMÜZ TAVUKGILLERDEN BOYNU VE BAŞI ÇIPLAK BIR KÜMES HAYVANI MI</that>
+      <template>Perde ayaklılardan, kazdan daha küçük, yabani türü de bulunan sevimli bir su kuşu mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>PERDE AYAKLILARDAN KAZDAN DAHA KÜÇÜK YABANI TÜRÜ DE BULUNAN SEVIMLI BIR SU KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan ördek.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖRDEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖRDEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>PERDE AYAKLILARDAN KAZDAN DAHA KÜÇÜK YABANI TÜRÜ DE BULUNAN SEVIMLI BIR SU KUŞU MU</that>
+      <template>Perde ayaklılardan, ördekten daha iri, yabani türü de bulunan bir kümes hayvanı mı?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>PERDE AYAKLILARDAN ÖRDEKTEN DAHA IRI YABANI TÜRÜ DE BULUNAN BIR KÜMES HAYVANI MI</that>
+      <template>Genellikle çatılarda yemle beslenen evcil bir kuş mu?<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>PERDE AYAKLILARDAN ÖRDEKTEN DAHA IRI YABANI TÜRÜ DE BULUNAN BIR KÜMES HAYVANI MI</that>
+      <template>Aklından tuttuğun hayvan kaz.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GENELLIKLE ÇATILARDA YEMLE BESLENEN EVCIL BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan güvercin.<think><set name="it"><set name="topic">13EVCILGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GÜVERCIN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN GÜVERCIN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13YABANGK0">
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GÜNEY KUTBUNDA YAŞAYAN SIRTI SIYAH GÖĞSÜ BEYAZ UÇAMAYAN KISA KANATLI BIR DENIZ KUŞU MU</that>
+      <template>Uzun gagalı, uzun bacaklı büyük beyaz göçmen kuşu mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BILGELIĞIN VE UĞURSUZLUĞUN SEMBOLÜ OLAN BIR GECE KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan baykuş.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BAYKUŞ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BAYKUŞ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BILGELIĞIN VE UĞURSUZLUĞUN SEMBOLÜ OLAN BIR GECE KUŞU MU</that>
+      <template>Kara renkli, tarla ve bahçelere zarar veren bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KARA RENKLI TARLA VE BAHÇELERE ZARAR VEREN BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan karga.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARGA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARGA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KARA RENKLI TARLA VE BAHÇELERE ZARAR VEREN BIR KUŞ MU</that>
+      <template>Genellikle kızıl siyah tüylü, yuvasını yüksek kayalıklara yapan ve beşiktaşın sembolü olan bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GENELLIKLE KIZIL SIYAH TÜYLÜ YUVASINI YÜKSEK KAYALIKLARA YAPAN VE BEŞIKTAŞIN SEMBOLÜ OLAN BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan kartal.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARTAL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARTAL</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>GENELLIKLE KIZIL SIYAH TÜYLÜ YUVASINI YÜKSEK KAYALIKLARA YAPAN VE BEŞIKTAŞIN SEMBOLÜ OLAN BIR KUŞ MU</that>
+      <template>Kartaldan daha kısa olan avcı ve yırtıcı bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KARTALDAN DAHA KISA OLAN AVCI VE YIRTICI BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan şahin.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ŞAHIN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ŞAHIN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KARTALDAN DAHA KISA OLAN AVCI VE YIRTICI BIR KUŞ MU</that>
+      <template>Dağlık yerlerde yaşayıp leşle beslenen iri bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>DAĞLIK YERLERDE YAŞAYIP LEŞLE BESLENEN IRI BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan akbaba.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AKBABA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AKBABA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>DAĞLIK YERLERDE YAŞAYIP LEŞLE BESLENEN IRI BIR KUŞ MU</that>
+      <template>Uzun ama kıvrık boyunlu olan, güzelliğin ve estetiğin sembolü bir su kuşu mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>UZUN AMA KIVRIK BOYUNLU OLAN GÜZELLIĞIN VE ESTETIĞIN SEMBOLÜ BIR SU KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan kuğu.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KUĞU</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KUĞU</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>UZUN AMA KIVRIK BOYUNLU OLAN GÜZELLIĞIN VE ESTETIĞIN SEMBOLÜ BIR SU KUŞU MU</that>
+      <template>Güney Kutbunda yaşayan, sırtı siyah göğsü beyaz, uçamayan kısa kanatlı bir deniz kuşu mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>GÜNEY KUTBUNDA YAŞAYAN SIRTI SIYAH GÖĞSÜ BEYAZ UÇAMAYAN KISA KANATLI BIR DENIZ KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan penguen.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PENGUEN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PENGUEN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>UZUN GAGALI UZUN BACAKLI BÜYÜK BEYAZ GÖÇMEN KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan leylek.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN LEYLEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN LEYLEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>UZUN GAGALI UZUN BACAKLI BÜYÜK BEYAZ GÖÇMEN KUŞU MU</that>
+      <template>Leyleğe çok benzese de gagası daha kısa olan göçmen bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>LEYLEĞE ÇOK BENZESE DE GAGASI DAHA KISA OLAN GÖÇMEN BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan turna.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TURNA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TURNA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>LEYLEĞE ÇOK BENZESE DE GAGASI DAHA KISA OLAN GÖÇMEN BIR KUŞ MU</that>
+      <template>Beyaz yanında pembe tüyleriyle diğer leyleksi kuşlardan ayrılan bir su kuşu mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BEYAZ YANINDA PEMBE TÜYLERIYLE DIĞER LEYLEKSI KUŞLARDAN AYRILAN BIR SU KUŞU MU</that>
+      <template>Aklından tuttuğun hayvan flamingo.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN FLAMINGO</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN FLAMINGO</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BEYAZ YANINDA PEMBE TÜYLERIYLE DIĞER LEYLEKSI KUŞLARDAN AYRILAN BIR SU KUŞU MU</that>
+      <template>Alt gagasında deriden bir kese olan, iri bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ALT GAGASINDA DERIDEN BIR KESE OLAN IRI BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan pelikan.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PELIKAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN PELIKAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ALT GAGASINDA DERIDEN BIR KESE OLAN IRI BIR KUŞ MU</that>
+      <template>Ağaçların kabuklarını gagalayarak beslenen bir kuş mu?<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AĞAÇLARIN KABUKLARINI GAGALAYARAK BESLENEN BIR KUŞ MU</that>
+      <template>Aklından tuttuğun hayvan ağaçkakan.<think><set name="it"><set name="topic">13YABANGK0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AĞAÇKAKAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AĞAÇKAKAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13SG0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>AYAKSIZ UZUN BIR HAYVAN MIDIR</that>
+      <template>Aklından tuttuğun hayvan yılan.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YILAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YILAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AYAKSIZ UZUN BIR HAYVAN MIDIR</that>
+      <template>Sürüngenlerin en irisi olan bu hayvan, kalın derili ve uzun kuyruklu mudur?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SÜRÜNGENLERIN EN IRISI OLAN BU HAYVAN KALIN DERILI VE UZUN KUYRUKLU MUDUR</that>
+      <template>Aklından tuttuğun hayvan timsah.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TIMSAH</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN TIMSAH</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SÜRÜNGENLERIN EN IRISI OLAN BU HAYVAN KALIN DERILI VE UZUN KUYRUKLU MUDUR</that>
+      <template>Renk değiştirebilmesiyle ünlü bir tür sürüngen mi?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>RENK DEĞIŞTIREBILMESIYLE ÜNLÜ BIR TÜR SÜRÜNGEN MI</that>
+      <template>Aklından tuttuğun hayvan bukalemun.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BUKALEMUN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN BUKALEMUN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>RENK DEĞIŞTIREBILMESIYLE ÜNLÜ BIR TÜR SÜRÜNGEN MI</that>
+      <template>Bazı insanların evde beslediği, sırtında dikenli çıkıntılar bulunan egzotik bir kertenkele mi?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BAZI INSANLARIN EVDE BESLEDIĞI SIRTINDA DIKENLI ÇIKINTILAR BULUNAN EGZOTIK BIR KERTENKELE MI</that>
+      <template>Aklından tuttuğun hayvan iguana.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN IGUANA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BAZI INSANLARIN EVDE BESLEDIĞI SIRTINDA DIKENLI ÇIKINTILAR BULUNAN EGZOTIK BIR KERTENKELE MI</that>
+      <template>Evde, bahçede, tarlada gördüğümüz küçük bir sürüngen mi?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN IGUANA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EVDE BAHÇEDE TARLADA GÖRDÜĞÜMÜZ KÜÇÜK BIR SÜRÜNGEN MI</that>
+      <template>Aklından tuttuğun hayvan kertenkele.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KERTENKELE</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KERTENKELE</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>EJDERHAYA BENZEYEN EN BÜYÜK KERTENKELE TÜRÜ MÜ</that>
+      <template>Aklından tuttuğun hayvan komodor ejderi.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EVDE BAHÇEDE TARLADA GÖRDÜĞÜMÜZ KÜÇÜK BIR SÜRÜNGEN MI</that>
+      <template>Ejderhaya benzeyen en büyük kertenkele türü mü?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOMODOR EJDERI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KOMODOR EJDERI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>EJDERHAYA BENZEYEN EN BÜYÜK KERTENKELE TÜRÜ MÜ</that>
+      <template>Yuvasını sırtında taşıyan dört ayaklı bir sürüngen mi?<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YUVASINI SIRTINDA TAŞIYAN DÖRT AYAKLI BIR SÜRÜNGEN MI</that>
+      <template>Aklından tuttuğun hayvan kaplumbağa.<think><set name="it"><set name="topic">13SG0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAPLUMBAĞA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KAPLUMBAĞA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13ZP0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>HEM SUDA HEM DE KARADA YAŞAYAN PATLAK GÖZLÜ BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan kurbağa.<think><set name="it"><set name="topic">13ZP0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KURBAĞA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KURBAĞA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+  <topic name="13AQUA0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ALT TÜRLERINI DÜŞÜNMEDEN YALNIZCA BALIK MI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ALT TÜRLERINI DÜŞÜNMEDEN YALNIZCA BALIK MI</that>
+      <template>Akvaryum balığı mıdır?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKVARYUM BALIĞI MIDIR</that>
+      <template>Adını bir ülkeden alan asya kökenli bir balık mıdır?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ADINI BIR ÜLKEDEN ALAN ASYA KÖKENLI BIR BALIK MIDIR</that>
+      <template>Aklından tuttuğun hayvan japon balığı.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN JAPON BALIĞI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN JAPON BALIĞI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ADINI BIR ÜLKEDEN ALAN ASYA KÖKENLI BIR BALIK MIDIR</that>
+      <template>Akvaryumun dibini yalayan bir balık mıdır?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKVARYUMUN DIBINI YALAYAN BIR BALIK MIDIR</that>
+      <template>Aklından tuttuğun hayvan çöpçü balığı.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇÖPÇÜ BALIĞI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÇÖPÇÜ BALIĞI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKVARYUMUN DIBINI YALAYAN BIR BALIK MIDIR</that>
+      <template>Burun kısmı sivri yırtıcı bir tuzlu su balığı mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BURUN KISMI SIVRI YIRTICI BIR TUZLU SU BALIĞI MI</that>
+      <template>Aklından tuttuğun hayvan köpek balığı.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KÖPEK BALIĞI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KÖPEK BALIĞI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BURUN KISMI SIVRI YIRTICI BIR TUZLU SU BALIĞI MI</that>
+      <template>Karadenizlilerin tatlısını bile yaptığı ince uzun balık mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KARADENIZLILERIN TATLISINI BILE YAPTIĞI INCE UZUN BALIK MI</that>
+      <template>Aklından tuttuğun hayvan hamsi.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HAMSI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN HAMSI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KARADENIZLILERIN TATLISINI BILE YAPTIĞI INCE UZUN BALIK MI</that>
+      <template>Tatlı sularda yaşayan, adı kolay aldatılan kimseler için de kullanılan kılçıklı bir balık mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>TATLI SULARDA YAŞAYAN ADI KOLAY ALDATILAN KIMSELER IÇIN DE KULLANILAN KILÇIKLI BIR BALIK MI</that>
+      <template>Aklından tuttuğun hayvan sazan.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SAZAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SAZAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>TATLI SULARDA YAŞAYAN ADI KOLAY ALDATILAN KIMSELER IÇIN DE KULLANILAN KILÇIKLI BIR BALIK MI</that>
+      <template>Sofralarda gördüğümüz, küt başlı, gümüş renginde, beyaz etli bir balık mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SOFRALARDA GÖRDÜĞÜMÜZ KÜT BAŞLI GÜMÜŞ RENGINDE BEYAZ ETLI BIR BALIK MI</that>
+      <template>Aklından tuttuğun hayvan kefal.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KEFAL</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KEFAL</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>SOFRALARDA GÖRDÜĞÜMÜZ KÜT BAŞLI GÜMÜŞ RENGINDE BEYAZ ETLI BIR BALIK MI</that>
+      <template>Açık kırmızı renkte, eti sevilen pullu bir balık mı?<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AÇIK KIRMIZI RENKTE ETI SEVILEN PULLU BIR BALIK MI</that>
+      <template>Aklından tuttuğun hayvan mercan.<think><set name="it"><set name="topic">13AQUA0</set></set></think></template>
+    </category>
+  </topic>
+  <topic name="13OMSIZ0">
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SÜNGER</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SÜNGER</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>VÜCUTLARI DELIKLERLE KAPLI ÇOĞU KAYALARA TUTUNMUŞ OLARAK KOLONILER DURUMUNDA YAŞAYAN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan sünger.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>VÜCUTLARI DELIKLERLE KAPLI ÇOĞU KAYALARA TUTUNMUŞ OLARAK KOLONILER DURUMUNDA YAŞAYAN BIR HAYVAN MI</that>
+      <template>Yuvarlak veya yassı, uzun kurtlar olarak da bilinen bir hayvan mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YUVARLAK VEYA YASSI UZUN KURTLAR OLARAK DA BILINEN BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan solucan.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SOLUCAN</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SOLUCAN</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>YUVARLAK VEYA YASSI UZUN KURTLAR OLARAK DA BILINEN BIR HAYVAN MI</that>
+      <template>Kendini korumak için siyah renkli bir sıvı salarak suyu bulandıran bir yumuşakça mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KENDINI KORUMAK IÇIN SIYAH RENKLI BIR SIVI SALARAK SUYU BULANDIRAN BIR YUMUŞAKÇA MI</that>
+      <template>Aklından tuttuğun hayvan mürekkep balığı.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MÜREKKEP BALIĞI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MÜREKKEP BALIĞI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KENDINI KORUMAK IÇIN SIYAH RENKLI BIR SIVI SALARAK SUYU BULANDIRAN BIR YUMUŞAKÇA MI</that>
+      <template>Yumuşak gövdeli sekiz kollu bir tür mürekkep balığı mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YUMUŞAK GÖVDELI SEKIZ KOLLU BIR TÜR MÜREKKEP BALIĞI MI</that>
+      <template>Aklından tuttuğun hayvan ahtapot.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AHTAPOT</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AHTAPOT</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>YUMUŞAK GÖVDELI SEKIZ KOLLU BIR TÜR MÜREKKEP BALIĞI MI</that>
+      <template>Bahçelerde yaşayan sarmal kabuklu küçük bir yumuşakça mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BAHÇELERDE YAŞAYAN SARMAL KABUKLU KÜÇÜK BIR YUMUŞAKÇA MI</that>
+      <template>Aklından tuttuğun hayvan salyangoz.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SALYANGOZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SALYANGOZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BAHÇELERDE YAŞAYAN SARMAL KABUKLU KÜÇÜK BIR YUMUŞAKÇA MI</that>
+      <template>Birbirine eklemlenmiş iki parçalı kabuğu olan bir yumuşakça mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BIRBIRINE EKLEMLENMIŞ IKI PARÇALI KABUĞU OLAN BIR YUMUŞAKÇA MI</that>
+      <template>Aklından tuttuğun hayvan midye.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MIDYE</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN MIDYE</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BIRBIRINE EKLEMLENMIŞ IKI PARÇALI KABUĞU OLAN BIR YUMUŞAKÇA MI</that>
+      <template>Yıldıza benzeyen, derisi dikenli bir omurgasız hayvan mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YILDIZA BENZEYEN DERISI DIKENLI BIR OMURGASIZ HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan deniz yıldızı.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ YILDIZI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ YILDIZI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>YILDIZA BENZEYEN DERISI DIKENLI BIR OMURGASIZ HAYVAN MI</that>
+      <template>Kubbeli bir şemsiyeye benzeyip insanı çarpan ve beyni olmayan bir omurgasız mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>KUBBELI BIR ŞEMSIYEYE BENZEYIP INSANI ÇARPAN VE BEYNI OLMAYAN BIR OMURGASIZ MI</that>
+      <template>Aklından tuttuğun hayvan deniz anası.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ ANASI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN DENIZ ANASI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>KUBBELI BIR ŞEMSIYEYE BENZEYIP INSANI ÇARPAN VE BEYNI OLMAYAN BIR OMURGASIZ MI</that>
+      <template>Çalışmayı çok seven, sosyal yaşamı güçlü bir böcek mi?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇALIŞMAYI ÇOK SEVEN SOSYAL YAŞAMI GÜÇLÜ BIR BÖCEK MI</that>
+      <template>Aklından tuttuğun hayvan karınca.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARINCA</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARINCA</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÇALIŞMAYI ÇOK SEVEN SOSYAL YAŞAMI GÜÇLÜ BIR BÖCEK MI</that>
+      <template>Avını ördüğü ağlarla yakalayan bir eklem bacaklı mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AVINI ÖRDÜĞÜ AĞLARLA YAKALAYAN BIR EKLEM BACAKLI MI</that>
+      <template>Aklından tuttuğun hayvan örümcek.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖRÜMCEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ÖRÜMCEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AVINI ÖRDÜĞÜ AĞLARLA YAKALAYAN BIR EKLEM BACAKLI MI</that>
+      <template>Çiçek çiçek dolaşop bal yapan bir zar kanatlı mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÇIÇEK ÇIÇEK DOLAŞOP BAL YAPAN BIR ZAR KANATLI MI</that>
+      <template>Aklından tuttuğun hayvan arı.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ARI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ARI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÇIÇEK ÇIÇEK DOLAŞOP BAL YAPAN BIR ZAR KANATLI MI</that>
+      <template>Bataklığı seven, özellikle yazları kanımızı emmeye bayılan çift kanatlı bir böcek mi?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>BATAKLIĞI SEVEN ÖZELLIKLE YAZLARI KANIMIZI EMMEYE BAYILAN ÇIFT KANATLI BIR BÖCEK MI</that>
+      <template>Aklından tuttuğun hayvan sivrisinek.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SIVRISINEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN SIVRISINEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>BATAKLIĞI SEVEN ÖZELLIKLE YAZLARI KANIMIZI EMMEYE BAYILAN ÇIFT KANATLI BIR BÖCEK MI</that>
+      <template>Özelikle yazın her yerde rastlanan, ayağında pislik taşıyan iki kanatlı ve koyu renkli bir böcek mi?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÖZELIKLE YAZIN HER YERDE RASTLANAN AYAĞINDA PISLIK TAŞIYAN IKI KANATLI VE KOYU RENKLI BIR BÖCEK MI</that>
+      <template>Aklından tuttuğun hayvan karasinek.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARASINEK</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN KARASINEK</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÖZELIKLE YAZIN HER YERDE RASTLANAN AYAĞINDA PISLIK TAŞIYAN IKI KANATLI VE KOYU RENKLI BIR BÖCEK MI</that>
+      <template>Yan yan yürüyen eklem bacaklı ve kabuklu bir hayvan mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>YAN YAN YÜRÜYEN EKLEM BACAKLI VE KABUKLU BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan yengeç.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YENGEÇ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN YENGEÇ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>YAN YAN YÜRÜYEN EKLEM BACAKLI VE KABUKLU BIR HAYVAN MI</that>
+      <template>Denizlerin hamamböceği olarak bilinse de yemesi pahalı, eklembacaklı ve kabuklu bir hayvan mı?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>DENIZLERIN HAMAMBÖCEĞI OLARAK BILINSE DE YEMESI PAHALI EKLEMBACAKLI VE KABUKLU BIR HAYVAN MI</that>
+      <template>Aklından tuttuğun hayvan istakoz.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ISTAKOZ</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN ISTAKOZ</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>DENIZLERIN HAMAMBÖCEĞI OLARAK BILINSE DE YEMESI PAHALI EKLEMBACAKLI VE KABUKLU BIR HAYVAN MI</that>
+      <template>Üzerinde yedi tane kara nokta olan kırmızı renkli gelin böceği mi?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>ÜZERINDE YEDI TANE KARA NOKTA OLAN KIRMIZI RENKLI GELIN BÖCEĞI MI</that>
+      <template>Aklından tuttuğun hayvan uğur böceği.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN UĞUR BÖCEĞI</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN UĞUR BÖCEĞI</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>ÜZERINDE YEDI TANE KARA NOKTA OLAN KIRMIZI RENKLI GELIN BÖCEĞI MI</that>
+      <template>Sıcak ve nemli yerlerde yaşayan, kıvrık ve kalkık kuyruğunda zehirli iğnesi olan bir tür böcek mi?<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>SICAK VE NEMLI YERLERDE YAŞAYAN KIVRIK VE KALKIK KUYRUĞUNDA ZEHIRLI IĞNESI OLAN BIR TÜR BÖCEK MI</that>
+      <template>Aklından tuttuğun hayvan akrep.<think><set name="it"><set name="topic">13OMSIZ0</set></set></think></template>
+    </category>
+    <category>
+      <pattern>EVET</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AKREP</that>
+      <template>Kendimi tebrik ediyorum o zaman. Tekrar oynamak istiyorsan HAYVAN BUL OYUNU yaz.<think><set name="it"><set name="topic">etkin konusuzluk</set></set></think></template>
+    </category>
+    <category>
+      <pattern>HAYIR</pattern>
+      <that>AKLINDAN TUTTUĞUN HAYVAN AKREP</that>
+      <template>Aklında tuttuğun hayvan neydi?</template>
+    </category>
+  </topic>
+</aiml>
