@@ -59,7 +59,7 @@
   </topic>
   <category>
     <pattern>TAŞ KAĞIT MAKAS</pattern>
-    <template>Taş-kağıt-makas oyununa hoş geldin. Unutma, taş makası, kağıt taşı, makas da taşı yener. Hadi oynayalım! Taş mı, kağıt mı, makas mı?<think><set name="it"><set name="topic">TKM</set></set></think></template>
+    <template>Taş-kağıt-makas oyununa hoş geldin. Unutma, taş makası, kağıt taşı, makas da kağıdı yener. Hadi oynayalım! Taş mı, kağıt mı, makas mı?<think><set name="it"><set name="topic">TKM</set></set></think></template>
   </category>
   <category>
     <pattern>TAŞ KAĞIT MAKAS *</pattern>
